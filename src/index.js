@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const axios = require("axios");
 const bot = new Discord.Client();
 const { TOKEN } = require("../config");
 const fs = require("fs");
@@ -21,7 +22,7 @@ bot.on("ready", () => {
   console.log("Handler is Online!");
 });
 
-bot.on("message", (message) => {
+bot.on("message", async (message) => {
   let args = message.content.substring(PREFIX.length).split(" ");
 
   switch (args[0]) {
@@ -39,14 +40,11 @@ bot.on("message", (message) => {
       }
       break;
     case "embed":
-      const embed = new Discord.MessageEmbed()
-        .setTitle("User Info")
-        .addField("Player Name", message.author.username)
-        .addField("Version", version)
-        .addField("Current Server", message.guild.name)
-        .setThumbnail(message.author.avatarURL())
-        .setColor(0x48c9b0);
-      message.channel.send(embed);
+      const embed = new Discord.MessageEmbed();
+      bot.commands.get("embed").execute(message, embed);
+      break;
+    case "joke":
+      bot.commands.get("joke").execute(message, axios, args);
       break;
   }
 });
