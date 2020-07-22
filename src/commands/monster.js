@@ -1,16 +1,15 @@
-const { execute } = require("./ping");
-
 module.exports = {
   name: "monster",
   description: "search for info on specific monster",
   async execute(message, axios, api, name, embed, args) {
     let getMonster = async () => {
       let response = await axios.get(`${api}/monsters?q={"name":"${name}"}`);
+
       let monster = response.data;
       return monster;
     };
     let monsterValue = await getMonster();
-    if (!monsterValue.response) {
+    if (!monsterValue.length) {
       return message.reply(
         `Sorry, I can't find that monster in my research notes!`
       );

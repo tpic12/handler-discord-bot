@@ -46,5 +46,9 @@ bot.on("message", async (message) => {
       bot.commands
         .get("monster")
         .execute(message, axios, api, name, embed, args);
+      break;
+    case "siege":
+      bot.commands.get("siege").execute(message, axios, api, embed, args);
+      break;
   }
 });
