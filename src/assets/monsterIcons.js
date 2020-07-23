@@ -236,4 +236,16 @@ module.exports = {
     icon:
       "https://gamepedia.cursecdn.com/monsterhunterworld_gamepedia_en/thumb/7/71/MHWI_Zinogre_Icon.png/120px-MHWI_Zinogre_Icon.png?version=59a6730a514be3c6f491731852d20f20",
   },
+  leshen: {
+    icon:
+      "https://gamepedia.cursecdn.com/monsterhunterworld_gamepedia_en/thumb/f/f5/MHW_Leshen_Icon.png/120px-MHW_Leshen_Icon.png?version=642cbccde346017fe7082cacb6045fb7",
+  },
+  "ancient-leshen": {
+    icon:
+      "https://gamepedia.cursecdn.com/monsterhunterworld_gamepedia_en/thumb/c/ce/MHW_Ancient_Leshen_Icon.png/120px-MHW_Ancient_Leshen_Icon.png?version=1a1d87b44a03aa8adfb7b38cb6b8b38f",
+  },
+  "safi'jiiva": {
+    icon:
+      "https://vignette.wikia.nocookie.net/monsterhunter/images/f/fa/MHWI-Safi%27jiiva_Icon.png/revision/latest/scale-to-width-down/60?cb=20191207161325",
+  },
 };
