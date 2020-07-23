@@ -1,3 +1,5 @@
+const MonsterIcon = require("../assets/monsterIcons");
+
 module.exports = {
   name: "monster",
   description: "search for info on specific monster",
@@ -15,6 +17,9 @@ module.exports = {
       );
     }
 
+    let searchName = name.toLowerCase().split(" ").join("-");
+    let iconURL = MonsterIcon[searchName].icon;
+
     let weakness3 = [];
     let weakness2 = [];
     for (value in monsterValue[0].weaknesses) {
@@ -31,6 +36,7 @@ module.exports = {
       .addField("3 Star Weaknesses", weakness3.join(", "))
       .addField("2 Star Weaknesses", weakness2.join(", "))
       .addField("Resistances", monsterValue[0].resistances[0].element)
+      .setThumbnail(iconURL)
       .setColor(0x48c9b0);
     message.channel.send(embed);
   },
