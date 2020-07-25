@@ -24,6 +24,12 @@ bot.on("ready", () => {
   console.log("Handler is Online!");
 });
 
+bot.on("messageReactionAdd", (reaction, user) => {
+  if (reaction.emoji.name === "➕") {
+    console.log(reaction.users);
+  }
+});
+
 bot.on("message", async (message) => {
   let args = message.content.substring(PREFIX.length).split(" ");
   let api = API_ENDPOINT;
@@ -65,7 +71,23 @@ bot.on("message", async (message) => {
             " | " +
             moment(date).calendar()
         );
-      message.channel.send(embed);
+      message.channel
+        .send(embed)
+        .then(async (msg) => {
+          const filter = (reaction, user) => {
+            return (
+              reaction.emoji.name === "➕" ||
+              reaction.emoji.name === "➖" ||
+              reaction.emoji.name === "❔"
+            );
+          };
+          const collector = message.createReactionCollector(filter);
+          // collector.on("collect", (reaction, user) => {
+          //   console.log(`Collected ${reaction.emoji.name} from ${user.tag}`);
+          // });
+          for (emoji of ["➕", "➖", "❔"]) await msg.react(emoji);
+        })
+        .catch(console.error);
       break;
     case "monster":
       let name = args.slice(1).join(" ");
