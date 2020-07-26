@@ -8,7 +8,7 @@
     "elements": ["None"],
     "ailments": ["Defense Down"],
     "resistances": ["None"],
-    "weakness": ["Fire (&#9733;&#9733;&#9733;)", "Dragon in normal state (&#9733;&#9733;)", "Dragon when crystallized (&#9733;)", "Thunder (&#9733;&#9733;)", "Water (&#9733;)", "Ice (&#9733;)"],
+    "weakness": ["Fire (⭐⭐⭐)", "Dragon (⭐⭐)", "Dragon-(Crystalized) (⭐)", "Thunder (⭐⭐)", "Water (⭐)", "Ice (⭐)", "Blast (⭐⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Rotten Vale",
         "img": "img/locale/rotten-vale.jpg"
@@ -30,7 +30,7 @@
     "elements": ["None"],
     "ailments": ["Bleeding"],
     "resistances": ["Water", "Sleep"],
-    "weakness": ["Fire (&#9733;&#9733;&#9733;)", "Dragon (&#9733;&#9733;)", "Thunder (&#9733;&#9733;)", "Ice (&#9733;)"],
+    "weakness": ["Fire (⭐⭐⭐)", "Dragon (⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐)", "Poison (⭐⭐)", "Paralysis (⭐)", "Blast (⭐)", "Stun (⭐)"],
     "locations": [{
       "name": "Ancient Forest",
       "img": "img/locale/ancient-forest.jpg"
@@ -47,7 +47,7 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight"],
     "resistances": ["Fire"],
-    "weakness": ["Water (&#9733;&#9733;&#9733;)", "Thunder (&#9733;&#9733;)", "Ice (&#9733;&#9733;)"],
+    "weakness": ["Water (⭐⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐)", "Poison (⭐⭐)", "Paralysis (⭐⭐)", "Sleep (⭐⭐)", "Blast (⭐)", "Stun (⭐⭐)"],
 
     "locations": [{
         "name": "Ancient Forest",
@@ -74,7 +74,7 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight", "Poison", "Stun"],
     "resistances": ["Fire"],
-    "weakness": ["Dragon (&#9733;&#9733;&#9733;)", "Ice (&#9733;&#9733;)"],
+    "weakness": ["Dragon (⭐⭐⭐)", "Ice (⭐⭐)", "Water (⭐)", "Thunder (⭐)", "Poison (⭐)", "Blast (⭐)", "Paralysis (⭐⭐)", "Sleep (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
         "img": "img/locale/ancient-forest.jpg"
@@ -100,7 +100,7 @@
     "elements": ["Ice"],
     "ailments": ["Iceblight in hoarfrost reach", "Waterblight in coral highlands", "Fireblight in elder's recess"],
     "resistances": ["Ice", "Water"],
-    "weakness": ["Dragon (&#9733;&#9733;&#9733;)", "Fire (&#9733;&#9733;)", "Thunder (&#9733;)"],
+    "weakness": ["Dragon (⭐⭐⭐)", "Fire (⭐⭐)", "Thunder (⭐)", "Blast (⭐⭐⭐)", "Stun (⭐⭐⭐)", "Poison (⭐⭐)", "Paralysis (⭐⭐)", "Sleep (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
         "img": "img/locale/ancient-forest.jpg"
@@ -142,7 +142,7 @@
     "elements": ["Ice"],
     "ailments": ["Iceblight"],
     "resistances": ["Ice", "Water"],
-    "weakness": ["Fire (&#9733;&#9733;&#9733;)", "Thunder (&#9733;&#9733;)", "Dragon (&#9733;)"],
+    "weakness": ["Fire (⭐⭐⭐)", "Thunder (⭐⭐)", "Dragon (⭐)", "Paralysis (⭐⭐)", "Sleep (⭐⭐)", "Poison (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Hoarfrost Reach",
         "img": "img/locale/hoarfrost-reach.jpg"
@@ -164,7 +164,7 @@
     "elements": ["None"],
     "ailments": ["Waterblight"],
     "resistances": ["Thunder", "Fire with mud", "Water with no mud"],
-    "weakness": ["Water with mud (&#9733;&#9733;&#9733;)", "Fire with no mud (&#9733;&#9733;&#9733;)", "Ice (&#9733;&#9733;)"],
+    "weakness": ["Water-(Mud) (⭐⭐⭐)", "Fire (⭐⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐)", "Poison (⭐⭐⭐)", "Paralysis (⭐⭐⭐)", "Blast (⭐⭐⭐)", "Sleep (⭐⭐)", "Stun (⭐)"],
     "locations": [{
         "name": "Wildspire Waste",
         "img": "img/locale/wildspire-waste.jpg"
@@ -186,7 +186,7 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight"],
     "resistances": ["Fire"],
-    "weakness": ["Thunder (&#9733;&#9733;&#9733;)", "Dragon (&#9733;&#9733;)", "Ice (&#9733;&#9733;)"],
+    "weakness": ["Thunder (⭐⭐⭐)", "Dragon (⭐⭐)", "Ice (⭐⭐)", "Water (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐)", "Stun (⭐)"],
     "locations": [{
         "name": "Ancient Forest",
         "img": "img/locale/ancient-forest.jpg"
@@ -219,8 +219,8 @@
     "useful_info": "Cannot be fought alone; a combination of a healer, attack, and an instigator are required. When Ecliptic Meteor is summoned, take cover behind a fallen Comet or face your fate.",
     "elements": ["Fire", "Thunder"],
     "ailments": ["Bleeding", "Fireblight", "Thunderblight"],
-    "resistances": ["Thunder", "Fire"],
-    "weakness": ["Dragon (&#9733;&#9733;&#9733;)"],
+    "resistances": ["None"],
+    "weakness": ["Dragon (⭐⭐⭐)", "Ice (⭐⭐)", "Water (⭐⭐)", "Thunder (⭐)", "Fire (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
       "name": "Elder's Recess",
       "img": "img/locale/elders-recess.jpg"
@@ -237,7 +237,7 @@
     "elements": ["Ice"],
     "ailments": ["Iceblight"],
     "resistances": ["Ice", "Dragon"],
-    "weakness": ["Fire (&#9733;&#9733;&#9733;)", "Thunder (&#9733;&#9733;)", "Water (&#9733;)"],
+    "weakness": ["Fire (⭐⭐⭐)", "Thunder (⭐⭐)", "Water (⭐)", "Blast (⭐⭐⭐)", "Paralysis (⭐⭐)", "Sleep (⭐⭐)", "Poison (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Hoarfrost Reach",
         "img": "img/locale/hoarfrost-reach.jpg"
@@ -259,7 +259,7 @@
     "elements": ["None"],
     "ailments": ["None"],
     "resistances": ["Fire", "Dragon"],
-    "weakness": ["Ice (&#9733;&#9733;&#9733;)", "Water (&#9733;&#9733;)"],
+    "weakness": ["Ice (⭐⭐⭐)", "Water (⭐⭐)", "Thunder (⭐)", "Paralysis (⭐⭐⭐)", "Stun (⭐)", "Paralysis (⭐⭐)", "Sleep (⭐⭐)", "Blast (⭐⭐)"],
     "locations": [{
         "name": "Wildspire Waste",
         "img": "img/locale/wildspire-waste.jpg"
@@ -281,7 +281,7 @@
     "elements": ["None"],
     "ailments": ["Effluvia"],
     "resistances": ["Water"],
-    "weakness": ["Fire (&#9733;&#9733;)", "Dragon (&#9733;&#9733;)", "Ice (&#9733;)", "Thunder (&#9733;)"],
+    "weakness": ["Fire (⭐⭐)", "Dragon (⭐⭐)", "Ice (⭐)", "Thunder (⭐)", "Blast (⭐⭐)", "Poison (⭐)", "Paralysis (⭐)", "Sleep (⭐)", "Stun (⭐)"],
     "locations": [{
         "name": "Ancient Forest",
         "img": "img/locale/ancient-forest.jpg"
@@ -307,7 +307,7 @@
     "elements": ["None"],
     "ailments": ["Blastscourge"],
     "resistances": ["Fire"],
-    "weakness": ["Ice (&#9733;&#9733;&#9733;)", "Water (&#9733;&#9733;)", "Thunder (&#9733;)", "Dragon (&#9733;)"],
+    "weakness": ["Ice (⭐⭐⭐)", "Water (⭐⭐)", "Thunder (⭐)", "Dragon (⭐)", "Blast (⭐)", "Poison (⭐⭐)", "Paralysis (⭐⭐)", "Sleep (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Elder's Recess",
         "img": "img/locale/elders-recess.jpg"
@@ -329,7 +329,7 @@
     "elements": ["None"],
     "ailments": ["Fireblight", "Waterblight"],
     "resistances": ["Fire"],
-    "weakness": ["Water (&#9733;&#9733;&#9733;)", "Thunder (&#9733;&#9733;)", "Ice (&#9733;)", "Dragon (&#9733;)"],
+    "weakness": ["Water (⭐⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐)", "Dragon (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Elder's Recess",
         "img": "img/locale/elders-recess.jpg"
@@ -350,8 +350,8 @@
     "useful_info": "After feeding, the water attacks from both ends are enhanced: focus on those two areas to weaken the creature again. Cowardly by nature, it refuses to eat around a predator.",
     "elements": ["Water"],
     "ailments": ["Waterblight"],
-    "resistances": ["Dragon", "Fire", "Water"],
-    "weakness": ["Ice (&#9733;&#9733;&#9733;)", "Thunder (&#9733;&#9733;)"],
+    "resistances": ["Water"],
+    "weakness": ["Ice (⭐⭐⭐)", "Thunder (⭐⭐)", "Fire (⭐)", "Dragon (⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Coral Highlands",
         "img": "img/locale/coral-highlands.jpg"
@@ -373,7 +373,7 @@
     "elements": ["Dragon"],
     "ailments": ["Dragonblight", "Defense Down", "Fireblight On Lava Terrain", "Iceblight On Icy Terrain", "Waterblight On Water Terrain", "Effluvial Buildup (In Rotten Vale)"],
     "resistances": ["None"],
-    "weakness": ["Thunder (&#9733;&#9733;&#9733;)", "Dragon (&#9733;&#9733;&#9733;)", "Fire (&#9733;&#9733;)", "Water (&#9733;&#9733;)"],
+    "weakness": ["Thunder (⭐⭐⭐)", "Dragon (⭐⭐⭐)", "Fire (⭐⭐)", "Water (⭐⭐)", "Ice (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Blast (⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
         "img": "img/locale/ancient-forest.jpg"
@@ -407,7 +407,7 @@
     "elements": ["None"],
     "ailments": ["Stun"],
     "resistances": ["Fire"],
-    "weakness": ["Ice (&#9733;&#9733;&#9733;)", "Dragon (&#9733;&#9733;)", "Water (&#9733;&#9733;)"],
+    "weakness": ["Ice (⭐⭐⭐)", "Dragon (⭐⭐)", "Water (⭐⭐)", "Thunder (⭐)", "Paralysis (⭐⭐⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐)"],
     "locations": [{
         "name": "Wildspire Waste",
         "img": "img/locale/wildspire-waste.jpg"
@@ -429,7 +429,7 @@
     "elements": ["Fire"],
     "ailments": ["Blastblight"],
     "resistances": ["Fire"],
-    "weakness": ["Thunder (&#9733;&#9733;&#9733;)", "Water (&#9733;&#9733;)", "Ice (&#9733;&#9733;)"],
+    "weakness": ["Thunder (⭐⭐⭐)", "Water (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)", "Blast (⭐)"],
     "locations": [{
         "name": "Elder's Recess",
         "img": "img/locale/elders-recess.jpg"
@@ -451,7 +451,7 @@
     "elements": ["Dragon"],
     "ailments": ["Dragonblight", "Bleeding"],
     "resistances": ["None"],
-    "weakness": ["Water (&#9733;&#9733;&#9733;)", "Fire (&#9733;&#9733;)", "Thunder (&#9733;&#9733;)", "Ice (&#9733;&#9733;)", "Dragon (&#9733;)"],
+    "weakness": ["Water (⭐⭐⭐)", "Fire (⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐)", "Poison (⭐⭐⭐)", "Paralysis (⭐⭐⭐)", "Sleep (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
         "img": "img/locale/ancient-forest.jpg"
@@ -493,7 +493,7 @@
     "elements": ["Thunder"],
     "ailments": ["Thunderblight"],
     "resistances": ["Thunder"],
-    "weakness": ["Ice when not charged (&#9733;&#9733;&#9733;)", "Ice when charged (&#9733;&#9733;)", "Water when charged (&#9733;&#9733;&#9733;)", "Water when not charged (&#9733;&#9733;)", "Fire (&#9733;&#9733;)", "Dragon (&#9733;)"],
+    "weakness": ["Ice (⭐⭐⭐)", "Ice-(Charged) (⭐⭐)", "Water-(Charged) (⭐⭐⭐)", "Water (⭐⭐)", "Fire (⭐⭐)", "Dragon (⭐)", "Blast (⭐)", "Poison (⭐⭐)", "Paralysis (⭐⭐)", "Sleep (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
         "img": "img/locale/ancient-forest.jpg"
@@ -535,7 +535,7 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight"],
     "resistances": ["Fire"],
-    "weakness": ["Water (&#9733;&#9733;&#9733;)", "Ice (&#9733;&#9733;)", "Dragon (&#9733;&#9733;)", "Thunder (&#9733;)"],
+    "weakness": ["Water (⭐⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐⭐)", "Thunder (⭐)", "Poison (⭐⭐)", "Paralysis (⭐⭐)", "Sleep (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
         "img": "img/locale/ancient-forest.jpg"
@@ -569,7 +569,7 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight", "Poison"],
     "resistances": ["Dragon", "Fire"],
-    "weakness": ["Thunder (&#9733;&#9733;&#9733;)", "Water (&#9733;&#9733;)", "Ice (&#9733;)"],
+    "weakness": ["Thunder (⭐⭐⭐)", "Water (⭐⭐)", "Ice (⭐)", "Poison (⭐)", "Blast (⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Elder's Recess",
         "img": "img/locale/elders-recess.jpg"
@@ -591,7 +591,7 @@
     "elements": ["None"],
     "ailments": ["Paralysis"],
     "resistances": ["Thunder"],
-    "weakness": ["Water (&#9733;&#9733;&#9733;)", "Fire (&#9733;&#9733;)", "Ice (&#9733;&#9733;)"],
+    "weakness": ["Water (⭐⭐⭐)", "Fire (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐)", "Sleep (⭐⭐⭐)", "Paralysis (⭐)", "Poison (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Rotten Vale",
         "img": "img/locale/rotten-vale.jpg"
@@ -613,7 +613,7 @@
     "elements": ["None"],
     "ailments": ["None"],
     "resistances": ["Water"],
-    "weakness": ["Fire (&#9733;&#9733;&#9733;)", "Thunder (&#9733;&#9733;)", "Ice (&#9733;&#9733;)"],
+    "weakness": ["Fire (⭐⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐⭐⭐)", "Paralysis (⭐⭐⭐)", "Blast (⭐⭐⭐)", "Stun (⭐⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
         "img": "img/locale/ancient-forest.jpg"
@@ -634,8 +634,8 @@
     "useful_info": "It's nearly impossible to fight a Jyuratodus in its swampy home. Coerce it to land, and then use water element weapons or your slinger to slowly chip away its hardened mud armor.",
     "elements": ["Water"],
     "ailments": ["Waterblight"],
-    "resistances": ["Water with no mud", "Thunder with mud)", "Fire with mud"],
-    "weakness": ["Thunder with no mud (&#9733;&#9733;&#9733;)", "Water with mud (&#9733;&#9733;&#9733;)"],
+    "resistances": ["Water with no mud", "Thunder with mud", "Fire with mud"],
+    "weakness": ["Thunder (⭐⭐⭐)", "Water-(Mud) (⭐⭐⭐)", "Fire (⭐)", "Ice (⭐)", "Dragon (⭐)", "Stun (⭐⭐⭐)", "Poison (⭐⭐)", "Paralysis (⭐⭐)", "Sleep (⭐)", "Blast (⭐)"],
     "locations": [{
         "name": "Wildspire Waste",
         "img": "img/locale/wildspire-waste.jpg"
@@ -649,15 +649,13 @@
 
   {
     "name": "Kirin",
-    "render": "img/render/kirin.png",
-    "icon": "img/icon/kirin_icon.png",
     "species": "Elder Dragon",
     "description": "Kirin are so rarely sighted that little is known of their ecology. It's been said they envelop themselves in pure electricity when they are provoked.",
     "useful_info": "The lightning a Kirin cloaks itself with has been confirmed to toughen its skin. The key to hunting a Kirin lies in staggering it, using Elderseal weapons, and protecting yourself from and avoiding its lightning attacks.",
     "elements": ["Thunder"],
     "ailments": ["Thunderblight"],
     "resistances": ["Thunder", "Paralysis"],
-    "weakness": ["Fire (&#9733;&#9733;&#9733;)", "Water (&#9733;&#9733;)", "Ice (&#9733;&#9733;)"],
+    "weakness": ["Fire (⭐⭐⭐)", "Water (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐)", "Sleep (⭐⭐)", "Blast (⭐⭐)", "Poison (⭐)", "Stun (⭐)"],
     "locations": [{
         "name": "Coral Highlands",
         "img": "img/locale/coral-highlands.jpg"
@@ -683,7 +681,7 @@
     "elements": ["None"],
     "ailments": ["None"],
     "resistances": ["None"],
-    "weakness": ["Water (&#9733;&#9733;&#9733;)", "Fire (&#9733;&#9733;)", "Thunder (&#9733;&#9733;)", "Ice (&#9733;&#9733;)", "Dragon (&#9733;&#9733;)"],
+    "weakness": ["Water (⭐⭐⭐)", "Fire (⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
         "img": "img/locale/ancient-forest.jpg"
@@ -709,7 +707,7 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight"],
     "resistances": ["Thunder", "Fire", "Ice when in gold"],
-    "weakness": ["Ice (&#9733;&#9733;&#9733;)", "Water (&#9733;&#9733;)", "Dragon (&#9733;&#9733;)", "Thunder when in gold (&#9733;&#9733;&#9733;)", "Water when in gold (&#9733;&#9733;)", "Dragon when in gold (&#9733;)"],
+    "weakness": ["Ice (⭐⭐⭐)", "Water (⭐⭐)", "Dragon (⭐⭐)", "Thunder-(Gold) (⭐⭐⭐)", "Dragon-(Gold) (⭐)", "Poison (⭐)", "Sleep (⭐)", "Paralysis (⭐)", "Blast (⭐)", "Stun (⭐)"],
     "locations": [{
         "name": "Caverns of El Dorado",
         "img": "img/locale/caverns-of-el-dorado.jpg"
@@ -728,7 +726,7 @@
     "elements": ["None"],
     "ailments": ["Stun"],
     "resistances": ["Water", "Ice"],
-    "weakness": ["Thunder (&#9733;&#9733;&#9733;)", "Dragon (&#9733;&#9733;)"],
+    "weakness": ["Thunder (⭐⭐⭐)", "Dragon (⭐⭐)", "Fire (⭐)", "Poison (⭐⭐⭐)", "Blast (⭐⭐⭐)", "Stun (⭐⭐)", "Sleep (⭐)", "Paralysis (⭐)"],
     "locations": [{
         "name": "Ancient Forest",
         "img": "img/locale/ancient-forest.jpg"
@@ -753,8 +751,8 @@
     "useful_info": "The hardened magma on Lavasioth's body becomes softer as it swims through the lava. Attack its armor immediately after it surfaces to increase your chances of destroying it before it rehardens.",
     "elements": ["Fire"],
     "ailments": ["Fireblight"],
-    "resistances": ["Fire when not hardened", "Thunder when not hardened", "Ice when hardened"],
-    "weakness": ["Water", "Thunder when not hardened", "Ice when not hardened"],
+    "resistances": ["Fire when not hardened", "Thunder when hardened", "Ice when hardened"],
+    "weakness": ["Water-(Hardened) (⭐⭐)", "Fire-(Hardened) (⭐)", "Water (⭐⭐⭐)", "Ice (⭐⭐)", "Thunder (⭐⭐)", "Dragon (⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐)", "Paralysis (⭐⭐)", "Blast (⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Elder's Recess",
         "img": "img/locale/elders-recess.jpg"
@@ -776,7 +774,7 @@
     "elements": ["Ice"],
     "ailments": ["Iceblight"],
     "resistances": ["Ice"],
-    "weakness": ["Thunder (&#9733;&#9733;&#9733;)", "Fire (&#9733;&#9733;)"],
+    "weakness": ["Thunder (⭐⭐⭐)", "Fire (⭐⭐)", "Water (⭐)", "Dragon (⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Coral Highlands",
         "img": "img/locale/coral-highlands.jpg"
@@ -802,7 +800,7 @@
     "elements": ["None"],
     "ailments": ["Bleeding"],
     "resistances": ["Water", "Sleep"],
-    "weakness": ["Fire (&#9733;&#9733;&#9733;)", "Dragon (&#9733;&#9733;)", "Thunder (&#9733;&#9733;)"],
+    "weakness": ["Fire (⭐⭐⭐)", "Dragon (⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐)", "Poison (⭐⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐)"],
     "locations": [{
       "name": "Ancient Forest",
       "img": "img/locale/ancient-forest.jpg"
@@ -819,7 +817,7 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight"],
     "resistances": ["Fire"],
-    "weakness": ["Ice (&#9733;&#9733;&#9733;)", "Dragon (&#9733;&#9733;)"],
+    "weakness": ["Ice (⭐⭐⭐)", "Dragon (⭐⭐)", "Water (⭐)", "Thunder (⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)", "Poison (⭐)", "Sleep (⭐)", "Paralysis (⭐)"],
     "locations": [{
         "name": "Wildspire Waste",
         "img": "img/locale/wildspire-waste.jpg"
@@ -842,10 +840,10 @@
     "species": "Flying Wyvern",
     "description": "Extremely agile, especially on the ground, this obsidian furred flying wyvern moves with explosive bursts of speed.",
     "useful_info": "Nargacuga's speed dulls when exhausted, so luring it into turf wars with other monsters is effective. Take care when setting traps, as it will destroy pitfall traps when not enraged.",
-    "elements": ["Ice"],
-    "ailments": ["Iceblight"],
-    "resistances": ["Ice"],
-    "weakness": ["Thunder (&#9733;&#9733;&#9733;)", "Fire (&#9733;&#9733;)"],
+    "elements": ["None"],
+    "ailments": ["Bleeding"],
+    "resistances": ["Water"],
+    "weakness": ["Thunder (⭐⭐⭐)", "Fire (⭐⭐)", "Ice (⭐)", "Dragon (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
         "img": "img/locale/ancient-forest.jpg"
@@ -875,7 +873,7 @@
     "elements": ["Water", "Thunder"],
     "ailments": ["Waterblight", "Thunderblight"],
     "resistances": ["Water", "Thunder"],
-    "weakness": ["Fire (&#9733;&#9733;&#9733;)", "Dragon (&#9733;&#9733;)", "Ice (&#9733;)"],
+    "weakness": ["Fire (⭐⭐⭐)", "Dragon (⭐⭐)", "Ice (⭐)", "Poison (⭐⭐⭐)", "Blast (⭐⭐⭐)", "Stun (⭐⭐)", "Sleep (⭐)", "Paralysis (⭐)"],
     "locations": [{
         "name": "Coral Highlands",
         "img": "img/locale/coral-highlands.jpg"
@@ -897,7 +895,7 @@
     "elements": ["None"],
     "ailments": ["None"],
     "resistances": ["None"],
-    "weakness": ["Thunder (&#9733;&#9733;&#9733;)", "Dragon (&#9733;&#9733;)"],
+    "weakness": ["Thunder (⭐⭐⭐)", "Dragon (⭐⭐)", "Fire (⭐)", "Water (⭐)", "Ice (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
       "name": "Elder's Recess",
       "img": "img/locale/elders-recess.jpg"
@@ -914,7 +912,7 @@
     "elements": ["None"],
     "ailments": ["Sleep"],
     "resistances": ["Dragon"],
-    "weakness": ["Water (&#9733;&#9733;&#9733;)", "Fire (&#9733;&#9733;)", "Thunder (&#9733;)", "Ice (&#9733;)"],
+    "weakness": ["Water (⭐⭐⭐)", "Fire (⭐⭐)", "Thunder (⭐)", "Ice (⭐)", "Sleep (⭐)", "Poison (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
         "img": "img/locale/ancient-forest.jpg"
@@ -939,8 +937,8 @@
     "useful_info": "Odogaron's nasty claws cause heavy bleeding and should be avoided at all costs. Use meat to lure it into traps, stagger it, or coerce it into bouts of rage to tire it out and make it easier to deal with.",
     "elements": ["None"],
     "ailments": ["Bleeding"],
-    "resistances": ["Dragon (Immune)", "Fire", "Water"],
-    "weakness": ["Ice (&#9733;&#9733;&#9733;)", "Thunder (&#9733;&#9733;)"],
+    "resistances": ["Dragon"],
+    "weakness": ["Ice (⭐⭐⭐)", "Thunder (⭐⭐)", "Water (⭐)", "Fire (⭐)", "Paralysis (⭐⭐⭐)", "Poison (⭐)", "Sleep (⭐⭐)", "Stun (⭐⭐)", "Blast (⭐⭐)"],
     "locations": [{
         "name": "Rotten Vale",
         "img": "img/locale/rotten-vale.jpg"
@@ -966,7 +964,7 @@
     "elements": ["None"],
     "ailments": ["Wind Pressure"],
     "resistances": ["Water"],
-    "weakness": ["Fire (&#9733;&#9733;&#9733;)", "Thunder (&#9733;&#9733;)"],
+    "weakness": ["Fire (⭐⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐)", "Dragon (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐⭐)", "Stun (⭐⭐⭐)"],
     "locations": [{
         "name": "Coral Highlands",
         "img": "img/locale/coral-highlands.jpg"
@@ -988,7 +986,7 @@
     "elements": ["Fire"],
     "ailments": ["Poison"],
     "resistances": ["Fire"],
-    "weakness": ["Dragon (&#9733;&#9733;&#9733;)", "Thunder (&#9733;&#9733;)"],
+    "weakness": ["Dragon (⭐⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐)", "Water (⭐)", "Stun (⭐⭐⭐)", "Poison (⭐)", "Blast (⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)"],
 
     "locations": [{
         "name": "Wildspire Waste",
@@ -1015,7 +1013,7 @@
     "elements": ["None"],
     "ailments": ["Poison"],
     "resistances": ["Water"],
-    "weakness": ["Thunder (&#9733;&#9733;&#9733;)", "Fire (&#9733;&#9733;)", "Ice (&#9733;&#9733;)"],
+    "weakness": ["Thunder (⭐⭐⭐)", "Fire (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐)", "Sleep (⭐⭐⭐)", "Paralysis (⭐⭐⭐)", "Poison (⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
         "img": "img/locale/ancient-forest.jpg"
@@ -1041,7 +1039,7 @@
     "elements": ["None"],
     "ailments": ["Sleep"],
     "resistances": ["None"],
-    "weakness": ["Dragon (&#9733;&#9733;&#9733;)", "Ice (&#9733;&#9733;)"],
+    "weakness": ["Dragon (⭐⭐⭐)", "Ice (⭐⭐)", "Fire (⭐)", "Water (⭐)", "Thunder (⭐)", "Blast (⭐⭐⭐)", "Poison (⭐⭐)", "Sleep (⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Rotten Vale",
         "img": "img/locale/rotten-vale.jpg"
@@ -1063,7 +1061,7 @@
     "elements": ["Thunder"],
     "ailments": ["Thunderblight"],
     "resistances": ["Thunder", "Fire", "Dragon"],
-    "weakness": ["Ice (&#9733;&#9733;&#9733;)", "Water (&#9733;)"],
+    "weakness": ["Ice (⭐⭐⭐)", "Water (⭐)", "Blast (⭐⭐)", "Poison (⭐)", "Sleep (⭐)", "Paralysis (⭐)", "Stun (⭐)"],
     "locations": [{
         "name": "Ancient Forest",
         "img": "img/locale/ancient-forest.jpg"
@@ -1105,7 +1103,7 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight", "Poison", "Stun"],
     "resistances": ["Fire"],
-    "weakness": ["Dragon (&#9733;&#9733;&#9733;)", "Thunder (&#9733;&#9733;)"],
+    "weakness": ["Dragon (⭐⭐⭐)", "Thunder (⭐⭐)", "Water (⭐)", "Ice (⭐)", "Poison (⭐)", "Blast (⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
         "img": "img/locale/ancient-forest.jpg"
@@ -1131,7 +1129,7 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight", "Poison"],
     "resistances": ["Fire"],
-    "weakness": ["Dragon (&#9733;&#9733;&#9733;)", "Thunder (&#9733;&#9733;)"],
+    "weakness": ["Dragon (⭐⭐⭐)", "Thunder (⭐⭐)", "Water (⭐)", "Ice (⭐)", "Stun (⭐⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Poison (⭐)", "Blast (⭐)"],
     "locations": [{
         "name": "Ancient Forest",
         "img": "img/locale/ancient-forest.jpg"
@@ -1157,7 +1155,7 @@
     "elements": ["None"],
     "ailments": ["Bleeding"],
     "resistances": ["None"],
-    "weakness": ["Dragon (&#9733;&#9733;&#9733;)", "Thunder (&#9733;&#9733;)", "Ice (&#9733;)", "Water (&#9733;)", "Fire (&#9733;)"],
+    "weakness": ["Dragon (⭐⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐)", "Water (⭐)", "Fire (⭐)", "Blast (⭐⭐⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐)"],
     "locations": [{
         "name": "Ancient Forest",
         "img": "img/locale/ancient-forest.jpg"
@@ -1198,8 +1196,8 @@
     "useful_info": "Its breath can be avoided by hiding behind obstacles. Drain its energy by breaking its parts and using the environment. Once it's cornered, work together to take it down.",
     "elements": ["Fire", "Dragon"],
     "ailments": ["Fireblight", "Dragonblight"],
-    "resistances": ["Sleep"],
-    "weakness": ["Dragon with Elderseal (&#9733;&#9733;&#9733;)", "Thunder (&#9733;&#9733;)", "Ice (&#9733;&#9733;)", "Water (&#9733;&#9733;)", "Fire (&#9733;&#9733;)", "Dragon (&#9733;&#9733;)"],
+    "resistances": ["None"],
+    "weakness": ["Dragon-(Elderseal) (⭐⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐⭐)", "Water (⭐⭐)", "Fire (⭐⭐)", "Dragon (⭐⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
       "name": "The Guiding Lands",
       "img": "img/locale/guiding-lands.jpg"
@@ -1214,9 +1212,9 @@
     "description": "A mutated Deviljho variant, driven mad by its overpowering hunger. It will attempt to feed on all it sees.",
     "useful_info": "The monster grows in strength as it fights and feeds, so preventing it from eating is paramount. Blows to the head are effective. It will ignore hunters around larger prey.",
     "elements": ["Dragon"],
-    "ailments": ["Dragonblight", "Defense Down", "Fireblight on lava terrain", "Iceblight on icy terrain", "Waterblight on water terrain", "Effluvial Buildup in rotten vale)"],
+    "ailments": ["Dragonblight", "Defense Down", "Fireblight on lava terrain", "Iceblight on icy terrain", "Waterblight on water terrain", "Effluvial Buildup in Rotten Vale"],
     "resistances": ["Ice"],
-    "weakness": ["Thunder (&#9733;&#9733;&#9733;)", "Dragon (&#9733;&#9733;&#9733;)", "Fire (&#9733;&#9733;)", "Water (&#9733;&#9733;)"],
+    "weakness": ["Thunder (⭐⭐⭐)", "Dragon (⭐⭐⭐)", "Fire (⭐⭐)", "Water (⭐⭐)", "Ice (⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐⭐⭐)", "Paralysis (⭐⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
         "img": "img/locale/ancient-forest.jpg"
@@ -1256,9 +1254,9 @@
     "description": "A tempered Yian Garuga that survived a grueling battle with just a scar on its head. Be careful of its successive breath attacks.",
     "useful_info": "Like the normal species, its head is easily breakable, and it's quick to run out of stamina. It behaves differently when flying short distances though, so be careful.",
     "elements": ["Fire"],
-    "ailments": ["Fireblight", "Poison", "Stun"],
+    "ailments": ["Fireblight", "Poison"],
     "resistances": ["Thunder", "Fire"],
-    "weakness": ["Water (&#9733;&#9733;&#9733;)", "Dragon (&#9733;&#9733;)", "Ice (&#9733;)"],
+    "weakness": ["Water (⭐⭐⭐)", "Dragon (⭐⭐)", "Ice (⭐)", "Blast (⭐⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)", "Poison (⭐)", "Sleep (⭐)"],
     "locations": [{
         "name": "Ancient Forest",
         "img": "img/locale/ancient-forest.jpg"
@@ -1278,9 +1276,9 @@
     "description": "The scales of this Bazelgeuse variant burn hotter than normal increasing in number and explosion radius as time passes.",
     "useful_info": "Focus attacks on the enhanced scales to weaken the monster. Reports indicate that puddle pods, crystalburst, and scatternuts are all effective in this regard.",
     "elements": ["Fire"],
-    "ailments": ["Fireblight"],
+    "ailments": ["Fireblight", "Blastblight"],
     "resistances": ["Fire"],
-    "weakness": ["Thunder (&#9733;&#9733;&#9733;)", "Dragon (&#9733;&#9733;&#9733;)", "Ice (&#9733;&#9733;)"],
+    "weakness": ["Thunder (⭐⭐)", "Dragon (⭐)", "Ice (⭐⭐⭐)", "Water (⭐)", "Sleep (⭐⭐⭐)", "Poison (⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)", "Blast (⭐)"],
     "locations": [{
         "name": "Elder's Recess",
         "img": "img/locale/elders-recess.jpg"
@@ -1300,9 +1298,9 @@
     "description": "A mysterious elder dragon able to manipulate the earth itself. Vibrations from its wingtips reshape the earth, denying hunters footing.",
     "useful_info": "Hunters must begin by stripping its sturdy rock armor: bombs and falling rocks are two proven methods. Skills to counter tremors are a boon against its wingtip attacks.",
     "elements": ["None"],
-    "ailments": ["Stun"],
-    "resistances": ["Fire", "Dragon", "Thunder"],
-    "weakness": ["Ice (&#9733;&#9733;&#9733;)", "Water (&#9733;&#9733;)"],
+    "ailments": ["None"],
+    "resistances": ["Sleep", "Thunder"],
+    "weakness": ["Ice (⭐⭐⭐)", "Water (⭐⭐)", "Fire (⭐)", "Dragon (⭐)", "Blast (⭐⭐⭐)", "Blast-(Armored) (⭐⭐)", "Poison (⭐⭐)", "Paralysis (⭐)", "Stun (⭐)"],
     "locations": [{
       "name": "The Guiding Lands",
       "img": "img/locale/guiding-lands.jpg"
@@ -1319,7 +1317,7 @@
     "elements": ["Ice"],
     "ailments": ["Iceblight"],
     "resistances": ["Ice"],
-    "weakness": ["Fire (&#9733;&#9733;&#9733;)", "Thunder (&#9733;&#9733;)", "Water (&#9733;)", "Dragon (&#9733;)"],
+    "weakness": ["Fire (⭐⭐⭐)", "Thunder (⭐⭐)", "Water (⭐)", "Dragon (⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Hoarfrost Reach",
         "img": "img/locale/hoarfrost-reach.jpg"
@@ -1339,9 +1337,9 @@
     "description": "A rare silver scaled Rathalos species. When weathering in hellfire, its breath grows more lethal and it gains a new set of attacks.",
     "useful_info": "The hellfire can be dispelled by dealing a set amount of damage to its head. It lives in tandem with a Gold Rathian, and their breath becomes deadlier still when combined.",
     "elements": ["Fire"],
-    "ailments": ["Fireblight", "Stun", "Poison"],
+    "ailments": ["Fireblight", "Poison"],
     "resistances": ["Fire", "Dragon"],
-    "weakness": ["Water (&#9733;&#9733;&#9733;)", "Thunder (&#9733;&#9733;)", "Ice (&#9733;)"],
+    "weakness": ["Water (⭐⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)", "Poison (⭐)", "Blast (⭐)"],
     "locations": [{
         "name": "Elder's Recess",
         "img": "img/locale/elders-recess.jpg"
@@ -1363,7 +1361,7 @@
     "elements": ["Dragon"],
     "ailments": ["Dragonblight"],
     "resistances": ["Ice", "Fire", "Water", "Dragon"],
-    "weakness": ["Thunder (&#9733;&#9733;&#9733;)", "Fire (&#9733;&#9733;)", "Water (&#9733;&#9733;)"],
+    "weakness": ["Thunder (⭐)", "Fire-(Charged) (⭐)", "Water-(Charged) (⭐⭐)", "Thunder-(Charged) (⭐⭐⭐)", "Ice-(Charged) (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Elder's Recess",
         "img": "img/locale/elders-recess.jpg"
@@ -1389,7 +1387,7 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight", "Blastblight"],
     "resistances": ["Fire"],
-    "weakness": ["Water (&#9733;&#9733;&#9733;)", "Ice (&#9733;&#9733;&#9733;)"],
+    "weakness": ["Water (⭐⭐⭐)", "Ice (⭐⭐⭐)", "Thunder (⭐)", "Ice (⭐)", "Poison (⭐⭐)", "Stun (⭐⭐)", "Sleep (⭐)", "Paralysis (⭐)", "Blast (⭐)"],
     "locations": [{
         "name": "Wildspire Waste",
         "img": "img/locale/wildspire-waste.jpg"
@@ -1413,9 +1411,9 @@
     "description": "A flying wyvern straight out of prehistory known for its deafening roar and powerful legs that frove its overwhelming charge.",
     "useful_info": "Ledges and obstacles won't stop Tigrex's charge, sp you'll need to steer clear. After enough repetitions the monster will tire and slow down, opening up to counterattacks.",
     "elements": ["None"],
-    "ailments": ["Iceblight on icy terrain", "Waterblight on water terrain"],
-    "resistances": ["Water", "Ice", "Fire"],
-    "weakness": ["Thunder (&#9733;&#9733;&#9733;)", "Dragon (&#9733;&#9733;)"],
+    "ailments": ["Iceblight on icy terrain", "Waterblight on water terrain", "Effluvial Buildup in Rotten Vale", "Fireblight in Elder's Recess"],
+    "resistances": ["Fire"],
+    "weakness": ["Thunder (⭐⭐⭐)", "Dragon (⭐⭐)", "Water (⭐)", "Ice (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
         "img": "img/locale/ancient-forest.jpg"
@@ -1453,7 +1451,7 @@
     "elements": ["Thunder"],
     "ailments": ["Thunderblight"],
     "resistances": ["Thunder"],
-    "weakness": ["Water (&#9733;&#9733;&#9733;)", "Fire (&#9733;&#9733;)", "Ice (&#9733;&#9733;)"],
+    "weakness": ["Water (⭐⭐⭐)", "Fire (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
         "img": "img/locale/ancient-forest.jpg"
@@ -1473,9 +1471,9 @@
     "description": "This odd monster blinds both prey and enemies with a special pulsing organ near its head. It then uses its strong legs to deliver finishing blows.",
     "useful_info": "Tzitzi-Ya-Ku's organs begin to radiate before it releases its blinding pulse, giving you enough time to escape and flank it. Damaging this organ will dramatically decrease the flash's effective range.",
     "elements": ["Thunder"],
-    "ailments": ["Thunderblight"],
-    "resistances": ["Thunder"],
-    "weakness": ["Thunder (&#9733;&#9733;&#9733;)", "Ice (&#9733;&#9733;&#9733;)", "Fire (&#9733;&#9733;)", "Water (&#9733;&#9733;)", "Dragon (&#9733;&#9733;)"],
+    "ailments": ["Stun"],
+    "resistances": ["None"],
+    "weakness": ["Thunder (⭐⭐⭐)", "Ice (⭐⭐⭐)", "Fire (⭐⭐)", "Water (⭐⭐)", "Dragon (⭐⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Coral Highlands",
         "img": "img/locale/coral-highlands.jpg"
@@ -1496,8 +1494,8 @@
     "useful_info": "A crushing slam from Uragaan's jaw can send shockwaves across the ground, detonating any explosive rocks in the area. In additionm when an Uragaan is toppled, its body can be mined for ore.",
     "elements": ["Fire"],
     "ailments": ["Sleep", "Fireblight"],
-    "resistances": ["Thunder"],
-    "weakness": ["Water (&#9733;&#9733;&#9733;)", "Ice (&#9733;&#9733;)", "Dragon (&#9733;&#9733;)"],
+    "resistances": ["Fire"],
+    "weakness": ["Water (⭐⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐⭐)", "Thunder (⭐)", "Poison (⭐⭐⭐)", "Stun (⭐⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Sleep (⭐)"],
     "locations": [{
         "name": "Elder's Recess",
         "img": "img/locale/elders-recess.jpg"
@@ -1519,7 +1517,7 @@
     "elements": ["None"],
     "ailments": ["Effluvia"],
     "resistances": ["Water"],
-    "weakness": ["Fire (&#9733;&#9733;&#9733;)", "Dragon (&#9733;&#9733;)"],
+    "weakness": ["Fire (⭐⭐⭐)", "Dragon (⭐⭐)", "Ice (⭐⭐)", "Thunder (⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)", "Poison (⭐)", "Sleep (⭐)", "Paralysis (⭐)"],
     "locations": [{
       "name": "Rotten Vale",
       "img": "img/locale/rotten-vale.jpg"
@@ -1535,7 +1533,7 @@
     "useful_info": "Shattering the ice that encases its body neutralizes its freezing breath. The ice walls it forms can be broken to provide platforms for mounting. Torch pods are useful for this.",
     "elements": ["Ice"],
     "ailments": ["Iceblight"],
-    "weakness": ["Fire (&#9733;&#9733;&#9733;)", "Thunder (&#9733;&#9733;)", "Dragon (&#9733;&#9733;)"],
+    "weakness": ["Fire (⭐⭐⭐)", "Thunder (⭐⭐)", "Dragon (⭐⭐)", "Water (⭐)", "Blast (⭐⭐⭐)", "Poison (⭐⭐)", "Sleep (⭐)", "Paralysis (⭐)", "Stun (⭐)"],
     "resistances": ["Ice"],
     "locations": [{
         "name": "Ancient Forest",
@@ -1577,7 +1575,7 @@
     "useful_info": "It's agility is its greatest weapon, but also makes it prone to exhaustion. When tired, it grows drastically less mobile. Focus attacks on its soft parts to tucker it out quickly.",
     "elements": ["None"],
     "ailments": ["Poison", "Noxious Poison", "Paralysis"],
-    "weakness": ["Thunder (&#9733;&#9733;&#9733;)", "Ice (&#9733;&#9733;)", "Fire (&#9733;)", "Dragon (&#9733;)"],
+    "weakness": ["Thunder (⭐⭐⭐)", "Ice (⭐⭐)", "Fire (⭐)", "Dragon (⭐)", "Sleep (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)", "Poison (⭐)", "Paralysis (⭐)"],
     "resistances": ["Water"],
     "locations": [{
         "name": "Hoarfrost Reach",
@@ -1597,10 +1595,10 @@
     "species": "Elder Dragon",
     "description": "A new species discovered in the depths of the Elder's Recess. Its relationship to the other elder dragons is unclear, as is its ecology.",
     "useful_info": "Perhaps as a result of its inability to fully control its own incalculable power, Xeno'jiiva is prone to go into a rampage when its energy filled limbs take enough damage. Endure its rampage and you may be rewarded with a good opening for attacks.",
-    "elements": ["Dragon"],
+    "elements": ["Dragon", "Fire"],
     "ailments": ["Fireblight", "Dragonblight"],
     "resistances": ["Sleep"],
-    "weakness": ["Poison (&#9733;&#9733;&#9733;)", "Fire (&#9733;&#9733;)", "Water (&#9733;&#9733;)", "Thunder (&#9733;&#9733;)", "Ice (&#9733;&#9733;)", "Dragon (&#9733;&#9733;)"],
+    "weakness": ["Poison (⭐⭐⭐)", "Fire (⭐⭐)", "Water (⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐⭐)", "Blast (⭐⭐)", "Paralysis (⭐)", "Stun (⭐)"],
     "locations": [{
       "name": "Elder's Recess",
       "img": "img/locale/elders-recess.jpg"
@@ -1617,7 +1615,7 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight", "Poison"],
     "resistances": ["Thunder", "Fire"],
-    "weakness": ["Water (&#9733;&#9733;&#9733;)", "Dragon (&#9733;&#9733;)", "Ice (&#9733;)"],
+    "weakness": ["Water (⭐⭐⭐)", "Dragon (⭐⭐)", "Ice (⭐)", "Blast (⭐⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)", "Poison (⭐)", "Sleep (⭐)"],
     "locations": [{
         "name": "Ancient Forest",
         "img": "img/locale/ancient-forest.jpg"
@@ -1639,7 +1637,7 @@
     "elements": ["Thunder"],
     "ailments": ["Thunderblight"],
     "resistances": ["Thunder"],
-    "weakness": ["Ice (&#9733;&#9733;&#9733;)", "Water (&#9733;&#9733;)", "Fire (&#9733;)", "Dragon (&#9733;)"],
+    "weakness": ["Ice (⭐⭐⭐)", "Water (⭐⭐)", "Fire (⭐)", "Dragon (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)", "Paralysis (⭐)"],
     "locations": [{
         "name": "Ancient Forest",
         "img": "img/locale/ancient-forest.jpg"
@@ -1664,8 +1662,8 @@
     "useful_info": "Normal attacks can't make a dent in its mountain like shell. Utilize larger weapons such as cannons and ballistae, or directly attack the 'magmacore' heat organs that are exposed in parts of its outer shell.",
     "elements": ["Fire"],
     "ailments": ["Fireblight"],
-    "resistances": ["Fire"],
-    "weakness": ["Dragon (&#9733;&#9733;&#9733;)", "Water (&#9733;&#9733;&#9733;)"],
+    "resistances": ["Fire", "Poison", "Sleep", "Paralysis", "Blast", "Stun"],
+    "weakness": ["Dragon (⭐⭐⭐)", "Water (⭐⭐⭐)", "Ice (⭐⭐)", "Thunder (⭐)"],
     "locations": [{
         "name": "The Great Ravine",
         "img": "img/locale/great_ravine.jpg"
@@ -1675,5 +1673,33 @@
         "img": "img/locale/everstream.jpg"
       }
     ]
+  },
+  {
+    "name": "Raging Brachydios",
+    "species": "Brute Wyvern",
+    "description": "Raging Brachydios sports a green shell with yellow-orange slime mold on its forelimbs, head, back, and tail that turns red when it becomes enraged. It is noticeably larger than normal Brachydios and moves slower as a result.",
+    "useful_info": "When the slime on its head, arms or tail turns red, the next attack on that body part will activate the slime and it will explode after half a second, breaking those parts will make the explosions less effective.",
+    "elements": ["None"],
+    "ailments": ["Blastblight", "fireblight", "Blastscourge"],
+    "resistances": ["Fire"],
+    "weakness": ["Ice (⭐⭐⭐)", "Water (⭐⭐)", "Thunder (⭐)", "Dragon (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐)", "Stun (⭐⭐)"],
+    "locations": [{
+      "name": "The Guiding Lands",
+      "img": "img/locale/guiding-lands.jpg"
+    }]
+  },
+  {
+    "name": "Furious Rajang",
+    "species": "Fanged Beast",
+    "description": "Furious Rajang looks like an enraged Rajang. Its Rage mode shows that its fur stands up and it is visibly electrified by an electric aura.",
+    "useful_info": "Unlike normal Rajang, Furious Rajang has to be in Rampage Mode in order for hunters to knock it out of rage mode, Furious Rajang's Rampage Mode is cancelled by hitting its head.",
+    "elements": ["Thunder"],
+    "ailments": ["Defense Down"],
+    "resistances": ["Fire", "Dragon", "Thunder"],
+    "weakness": ["Ice (⭐⭐⭐)", "Water (⭐)", "Poison (⭐)", "Sleep (⭐)", "Paralysis (⭐)", "Blast (⭐⭐)", "Stun (⭐)"],
+    "locations": [{
+      "name": "Hoarfrost Reach",
+      "img": "img/locale/rotten-vale.jpg"
+    }]
   }
 ]

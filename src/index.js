@@ -92,12 +92,24 @@ bot.on("message", async (message) => {
     case "monster":
       let name = args.slice(1).join(" ");
       if (!args[1]) return message.reply("Please specify monster to search");
-      bot.commands
-        .get("monster")
-        .execute(message, axios, api, name, embed, args);
+      // if (args[1] == "all") {
+      //   if (!args[2]) {
+      //     return message.reply("Please specify monster to search");
+      //   }
+      //   name = args.slice(2).join(" ");
+      //   // console.log("name w/ all: ", name);
+      // } else {
+      //   name = args.slice(1).join(" ");
+      //   // console.log("name w/o all: ", name);
+      // }
+
+      bot.commands.get("monster").execute(message, name, embed, args);
       break;
     case "siege":
       bot.commands.get("siege").execute(message, axios, api, embed, args);
+      break;
+    case "locale":
+      bot.commands.get("locale").execute(message, name, embed, args);
       break;
   }
 });

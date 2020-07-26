@@ -248,4 +248,36 @@ module.exports = {
     icon:
       "https://vignette.wikia.nocookie.net/monsterhunter/images/f/fa/MHWI-Safi%27jiiva_Icon.png/revision/latest/scale-to-width-down/60?cb=20191207161325",
   },
+  "stygian-zinogre": {
+    icon:
+      "https://vignette.wikia.nocookie.net/monsterhunter/images/f/f3/MHWI-Stygian_Zinogre_Icon.png/revision/latest/scale-to-width-down/62?cb=20191209205320",
+  },
+  "silver-rathalos": {
+    icon:
+      "https://vignette.wikia.nocookie.net/monsterhunter/images/d/dc/MHWI-Silver_Rathalos_Icon.png/revision/latest/scale-to-width-down/62?cb=20190918023700",
+  },
+  "gold-rathian": {
+    icon:
+      "https://vignette.wikia.nocookie.net/monsterhunter/images/8/85/MHWI-Gold_Rathian_Icon.png/revision/latest/scale-to-width-down/61?cb=20190918023700",
+  },
+  "scarred-yian-garuga": {
+    icon:
+      "https://vignette.wikia.nocookie.net/monsterhunter/images/a/ab/MHWI-Scarred_Yian_Garuga_Icon.png/revision/latest/scale-to-width-down/61?cb=20190918031612",
+  },
+  "raging-brachydios": {
+    icon:
+      "https://vignette.wikia.nocookie.net/monsterhunter/images/6/68/MHWI-Raging_Brachydios_Icon.png/revision/latest/scale-to-width-down/62?cb=20200324185338",
+  },
+  "furious-rajang": {
+    icon:
+      "https://vignette.wikia.nocookie.net/monsterhunter/images/6/6a/MHWI-Furious_Rajang_Icon.png/revision/latest/scale-to-width-down/62?cb=20200323222229",
+  },
+  "frostfang-barioth": {
+    icon:
+      "https://vignette.wikia.nocookie.net/monsterhunter/images/0/0c/MHWI-Frostfang_Barioth_Icon.png/revision/latest/scale-to-width-down/62?cb=20200704193727",
+  },
+  alatreon: {
+    icon:
+      "https://vignette.wikia.nocookie.net/monsterhunter/images/6/6d/MHWI-Alatreon_Icon.png/revision/latest/scale-to-width-down/62?cb=20200321131243",
+  },
 };
