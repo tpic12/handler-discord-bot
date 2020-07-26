@@ -109,7 +109,10 @@ bot.on("message", async (message) => {
       bot.commands.get("siege").execute(message, axios, api, embed, args);
       break;
     case "locale":
-      bot.commands.get("locale").execute(message, name, embed, args);
+      if (!args[1] || args[1].toLowerCase() == "the")
+        return message.reply("Please specify a locale to search!");
+      let area = args.slice(1).join(" ");
+      bot.commands.get("locale").execute(message, area, embed, args);
       break;
   }
 });
