@@ -20,24 +20,26 @@ module.exports = {
     };
     message.channel.send("What do you want to hunt?");
     let filter = (m) => m.author.id === message.author.id;
-    let titleMsg = await message.channel.awaitMessages(filter, { max: 1 });
+    let titleMsg = await message.channel.awaitMessages(filter, {
+      max: 1,
+      dispose: true,
+    });
     hunt.desc = titleMsg.first().content;
-    message.first().delete();
-    //deletes users message
-    titleMsg.first().delete();
 
-    message.channel.send("When? h:m am/pm mm/dd");
+    message.channel.send("When? `h:m am/pm mm/dd`");
     let timeMsg = await message.channel.awaitMessages(filter, { max: 1 });
-    hunt.time = `${timeMsg.first().content}/2020`;
-    message.first().delete();
-    //deletes users message
-    timeMsg.first().delete();
+    if (timeMsg.first().content.split(" ").length !== 3) {
+      message.reply("Incorrect time format, `example: 7:35 pm 07/23`");
+    }
+    hunt.time = `${timeMsg.first().content.trim()}/2020`;
+
+    // //deletes users message
+    // timeMsg.first().delete(500);
 
     let date = new Date(hunt.time);
     hunt.timeMS = countdown(new Date(), date, countdown.MILLISECONDS)
       .toString()
       .split(" ")[0];
-    // hunt.timeMS = ms("1 day", "10 hours");
 
     let hunters =
       hunt.hunters.length > 1 ? hunt.hunters.join(", ") : hunt.hunters;
@@ -53,7 +55,7 @@ module.exports = {
           " | " +
           moment(date).calendar()
       );
-
+    message.channel.bulkDelete(5);
     let sent = await message.channel
       .send(embed)
       .then((sent) => {
@@ -72,6 +74,7 @@ module.exports = {
           Hunts.delete(
             message.author.id + " G " + message.guild.name + " M " + sent.id
           );
+          sent.delete();
         }, hunt.timeMS);
         return sent;
       })

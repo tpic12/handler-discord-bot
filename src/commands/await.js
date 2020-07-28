@@ -10,10 +10,14 @@ module.exports = {
     let sent = await message.channel.send(embed);
     const reactions = await sent.awaitReactions((reaction) => {
       // console.log(reaction.users.cache);
-      reaction.users.cache.map((user) => console.log(user.username));
+      // reaction.users.cache.map((user) => console.log(user.username));
       if ((reaction.emoji.name = "➕")) {
         newEmbed.setTitle("This is new content");
-        sent.edit(newEmbed);
+        sent.edit(newEmbed).then(async (msg) => {
+          await msg.channel.messages.fetch({ limit: 3 }).then((messages) => {
+            msg.channel.bulkDelete(messages);
+          });
+        });
       }
       // console.log(reaction.emoji.name);
     });

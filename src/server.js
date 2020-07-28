@@ -1,16 +1,11 @@
 const app = require("express")();
 
 const { Hunts } = require("./variable");
-const { Message } = require("discord.js");
 
 module.exports = async (bot) => {
   app.get("/api/hunts", async (req, res) => {
     let Obj = {};
-    // let id = Math.floor(1000 + Math.random() * 9000);
-    // while (Obj[id]) {
-    //   console.log("new id for: ", id);
-    //   id = Math.floor(1000 + Math.random() * 9000);
-    // }
+
     Hunts.forEach((hunt) => {
       Obj[hunt.id] = {
         server_id: hunt.server_id,
