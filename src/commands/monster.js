@@ -22,7 +22,7 @@ module.exports = {
       });
     }
 
-    console.log("monsters: ", monsterValue);
+    // console.log("monsters: ", monsterValue);
 
     if (!monsterValue.length) {
       return message.reply(
@@ -36,15 +36,15 @@ module.exports = {
     // monsterValue.weakness.replace(replaceStr, "⭐");⭐⭐⭐
     monsterValue[0].weakness.forEach((wk) => {
       let item = wk.split(" ");
-      console.log(item);
+      // console.log(item);
       if (item[1].substring(1, item[1].length - 1) === "⭐⭐⭐") {
         weakness3.push(item[0]);
       } else if (item[1].substring(1, item[1].length - 1) === "⭐⭐") {
         weakness2.push(item[0]);
       }
     });
-    console.log("3 star weaknesses: ", weakness3);
-    console.log("2 star weaknesses: ", weakness2);
+    // console.log("3 star weaknesses: ", weakness3);
+    // console.log("2 star weaknesses: ", weakness2);
     monsterValue.map((monster) => {
       let searchName = monster.name.toLowerCase().split(" ").join("-");
       let iconURL = MonsterIcon[searchName].icon;
