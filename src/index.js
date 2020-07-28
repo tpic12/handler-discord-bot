@@ -26,7 +26,6 @@ bot.on("ready", () => {
 
 bot.on("message", async (message) => {
   let args = message.content.substring(PREFIX.length).split(" ");
-  let api = API_ENDPOINT;
   let embed = new Discord.MessageEmbed();
 
   switch (args[0]) {
