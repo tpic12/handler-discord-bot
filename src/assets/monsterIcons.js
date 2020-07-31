@@ -127,7 +127,7 @@ module.exports = {
     icon:
       "https://gamepedia.cursecdn.com/monsterhunterworld_gamepedia_en/thumb/0/06/MHW_Vaal_Hazak_Icon.png/120px-MHW_Vaal_Hazak_Icon.png?version=132723e0a100e434552b9aae36b33b5b",
   },
-  "xeno'jiiva": {
+  "xeno-jiiva": {
     icon:
       "https://vignette.wikia.nocookie.net/monsterhunter/images/e/e3/MHW-Xeno%27jiiva_Icon.png/revision/latest/scale-to-width-down/168?cb=20180127022938",
   },
@@ -244,7 +244,7 @@ module.exports = {
     icon:
       "https://gamepedia.cursecdn.com/monsterhunterworld_gamepedia_en/thumb/c/ce/MHW_Ancient_Leshen_Icon.png/120px-MHW_Ancient_Leshen_Icon.png?version=1a1d87b44a03aa8adfb7b38cb6b8b38f",
   },
-  "safi'jiiva": {
+  "safi-jiiva": {
     icon:
       "https://vignette.wikia.nocookie.net/monsterhunter/images/f/fa/MHWI-Safi%27jiiva_Icon.png/revision/latest/scale-to-width-down/60?cb=20191207161325",
   },

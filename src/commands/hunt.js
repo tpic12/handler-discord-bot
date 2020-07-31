@@ -37,6 +37,19 @@ module.exports = {
     // timeMsg.first().delete(500);
 
     let date = new Date(hunt.time);
+    let est = moment(new Date(hunt.time))
+      .tz("America/new_york")
+      .format("M/D dd h:mma z");
+    let cst = moment(new Date(hunt.time))
+      .tz("America/indiana/tell_city")
+      .format("M/D dd h:mma z");
+    let mst = moment(new Date(hunt.time))
+      .tz("America/denver")
+      .format("M/D dd h:mma z");
+    let pst = moment(new Date(hunt.time))
+      .tz("America/los_angeles")
+      .format("M/D dd h:mma z");
+    let times = [est, cst, mst, pst];
     hunt.timeMS = countdown(new Date(), date, countdown.MILLISECONDS)
       .toString()
       .split(" ")[0];
@@ -45,8 +58,8 @@ module.exports = {
       hunt.hunters.length > 1 ? hunt.hunters.join(", ") : hunt.hunters;
     embed
       .setTitle("Hunt")
-      .addField("Objective:", hunt.desc, true)
-      .addField("Time:", hunt.time.slice(0, hunt.time.length - 5), true)
+      .addField("Objective:", hunt.desc)
+      .addField("Time:", times)
       .addField(`Hunters: 1/4`, hunters)
       .setColor(0xa555bd)
       .setFooter(
@@ -94,13 +107,25 @@ module.exports = {
             hunter.hunterId = user.id;
           });
 
-          if (reaction.emoji.name === "➕" && hunter.username !== "Handler") {
+          if (
+            reaction.emoji.name === "➕" &&
+            hunter.username !== "Handler" &&
+            hunter.username !== "Handler-dev"
+          ) {
             HuntService.addHunter(hunter, message, sent);
           }
-          if (reaction.emoji.name === "➖" && hunter.username !== "Handler") {
+          if (
+            reaction.emoji.name === "➖" &&
+            hunter.username !== "Handler" &&
+            hunter.username !== "Handler-dev"
+          ) {
             HuntService.removeHunter(hunter, message, sent);
           }
-          if (reaction.emoji.name === "❔" && hunter.username !== "Handler") {
+          if (
+            reaction.emoji.name === "❔" &&
+            hunter.username !== "Handler" &&
+            hunter.username !== "Handler-dev"
+          ) {
             HuntService.addAltHunter(hunter, message, sent);
           }
         });

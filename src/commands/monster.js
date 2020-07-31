@@ -5,7 +5,13 @@ module.exports = {
   name: "monster",
   description: "search for info on specific monster",
   async execute(message, name, embed, args) {
-    // console.log("input: ", name);
+    console.log("name: ", name);
+    console.log("has ' : ", name.split("").includes("'"));
+    if (name.split("").includes("'") || name.split("").includes("‘")) {
+      name = name.replace("‘", " ");
+      name = name.replace("'", " ");
+    }
+    console.log("new name: ", name);
     // console.log("args: ", args);
     let monsterValue = [];
     if (args[1] == "all") {

@@ -1215,7 +1215,7 @@
   },
 
   {
-    "name": "Safi'jiiva",
+    "name": "Safi jiiva",
     "render": "color/render/safi'jiiva.png",
     "icon": "color/icon/safi'jiiva_icon.png",
     "species": "Elder Dragon",
@@ -1436,7 +1436,7 @@
     "icon": "color/icon/tigrex_icon.png",
     "species": "Flying Wyvern",
     "description": "A flying wyvern straight out of prehistory known for its deafening roar and powerful legs that frove its overwhelming charge.",
-    "useful_info": "Ledges and obstacles won't stop Tigrex's charge, sp you'll need to steer clear. After enough repetitions the monster will tire and slow down, opening up to counterattacks.",
+    "useful_info": "Ledges and obstacles won't stop Tigrex's charge, so you'll need to steer clear. After enough repetitions the monster will tire and slow down, opening up to counterattacks.",
     "elements": ["None"],
     "ailments": ["Iceblight on icy terrain", "Waterblight on water terrain", "Effluvial Buildup in Rotten Vale", "Fireblight in Elder's Recess"],
     "resistances": ["Fire"],
@@ -1616,7 +1616,7 @@
   },
 
   {
-    "name": "Xeno'jiiva",
+    "name": "Xeno jiiva",
     "render": "color/render/xenojiiva.png",
     "icon": "color/icon/xenojiiva_icon.png",
     "species": "Elder Dragon",
