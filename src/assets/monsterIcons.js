@@ -167,7 +167,6 @@ module.exports = {
     icon:
       "https://gamepedia.cursecdn.com/monsterhunterworld_gamepedia_en/thumb/e/ed/MHWI_Coral_Pukei-Pukei_Icon.png/118px-MHWI_Coral_Pukei-Pukei_Icon.png?version=a4817fc869bfcf1f6d41e5ad50e0c4b7",
   },
-  //pointbreak
   "ebony-odogaron": {
     icon:
       "https://gamepedia.cursecdn.com/monsterhunterworld_gamepedia_en/thumb/8/85/MHWI_Ebony_Odogaron_Icon.png/120px-MHWI_Ebony_Odogaron_Icon.png?version=49d5dc10a7f0f73b44c6fe571bdff498",

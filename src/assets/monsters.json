@@ -1700,5 +1700,32 @@
         "color": "color/locale/everstream.jpg"
       }
     ]
+  },
+  {
+    "name": "Frostfang Barioth",
+    "species": "Flying Wyvern",
+    "description": "A Barioth variant capable of spewing a sub-zero breath attack that it uses to slow down prey. Be careful, as this attack can freeze you as well.",
+    "useful_info": "The general Strategy should be to break it's wings as early as possible and go from there. Breaking its wings will make Frostfang Barioth stagger after many attacks, creating openings for damage. The head / teeth can be broken twice. Doing so will reduce the length the Frost breath lingers on the ground.",
+    "elements": ["Ice"],
+    "ailments": ["Iceblight"],
+    "resistances": ["Water", "Ice"],
+    "weakness": ["Fire (⭐⭐⭐)", "Thunder (⭐⭐)", "Dragon (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
+    "locations": [{
+      "name": "Hoarfrost Reach",
+      "color": "0x8ABEEB"
+    }]
+  },
+  {
+    "name": "Alatreon",
+    "species": "Elder Dragon",
+    "description": "Known as a symbol of destruction, people fear even uttering it’s name. It’s rumoured to control all of the elements, but most, if not all, records of its existence have been burned.",
+    "useful_info": "Alatreon can use attack from any element in any form, though it tends to prioritise the ones that corresponds to it's active state. There are two events that allow you to fight Alatreon (Evening Star[Starts Fire Active] and Death Star[Starts Ice Active]). They rotate on a daily basis and differ from player to player.",
+    "elements": ["Fire", "Ice", "Thunder", "Water", "Dragon"],
+    "ailments": ["Fireblight", "Iceblight", "Waterblight", "Thunderblight", "Dragonblight"],
+    "resistances": ["Fire (Fire Active)", "Ice (Ice Active)"],
+    "weakness": ["Dragon-(FireActive) (⭐)", "Ice-(FireActive) (⭐⭐⭐)", "Water-(FireActive) (⭐⭐)", "Thunder-(FireActive) (⭐)", "Dragon-(IceActive) (⭐)", "Fire-(IceActive) (⭐⭐⭐)", "Water-(IceActive) (⭐)", "Thunder-(IceActive) (⭐⭐)", "Dragon-(DragonActive) (⭐⭐)", "Ice-(DragonActive) (⭐)", "Water-(DragonActive) (⭐)", "Thunder-(DragonActive) (⭐)", "Fire-(DragonActive) (⭐)", "Poison (⭐)", "Sleep (⭐)", "Paralysis (⭐)", "Blast (⭐)", "Stun (⭐)"],
+    "locations": [{
+      "name": "Secluded Valley"
+    }]
   }
 ]

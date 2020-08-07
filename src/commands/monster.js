@@ -5,13 +5,13 @@ module.exports = {
   name: "monster",
   description: "search for info on specific monster",
   async execute(message, name, embed, args) {
-    console.log("name: ", name);
-    console.log("has ' : ", name.split("").includes("'"));
+    // console.log("name: ", name);
+    // console.log("has ' : ", name.split("").includes("'"));
     if (name.split("").includes("'") || name.split("").includes("‘")) {
       name = name.replace("‘", " ");
       name = name.replace("'", " ");
     }
-    console.log("new name: ", name);
+    // console.log("new name: ", name);
     // console.log("args: ", args);
     let monsterValue = [];
     if (args[1] == "all") {
@@ -42,15 +42,15 @@ module.exports = {
     // monsterValue.weakness.replace(replaceStr, "⭐");⭐⭐⭐
     monsterValue[0].weakness.forEach((wk) => {
       let item = wk.split(" ");
-      // console.log(item);
+      console.log(item);
       if (item[1].substring(1, item[1].length - 1) === "⭐⭐⭐") {
         weakness3.push(item[0]);
       } else if (item[1].substring(1, item[1].length - 1) === "⭐⭐") {
         weakness2.push(item[0]);
       }
     });
-    // console.log("3 star weaknesses: ", weakness3);
-    // console.log("2 star weaknesses: ", weakness2);
+    console.log("3 star weaknesses: ", weakness3);
+    console.log("2 star weaknesses: ", weakness2);
     monsterValue.map((monster) => {
       let searchName = monster.name.toLowerCase().split(" ").join("-");
       let iconURL = MonsterIcon[searchName].icon;
