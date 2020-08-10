@@ -49,8 +49,14 @@ module.exports = {
         weakness2.push(item[0]);
       }
     });
-    console.log("3 star weaknesses: ", weakness3);
-    console.log("2 star weaknesses: ", weakness2);
+    // console.log("3 star weaknesses: ", weakness3);
+    // console.log("2 star weaknesses: ", weakness2);
+    if (!weakness3.length) {
+      weakness3.push("None");
+    }
+    if (!weakness2.length) {
+      weakness2.push("None");
+    }
     monsterValue.map((monster) => {
       let searchName = monster.name.toLowerCase().split(" ").join("-");
       let iconURL = MonsterIcon[searchName].icon;
