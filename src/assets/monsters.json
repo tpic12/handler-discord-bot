@@ -1082,7 +1082,7 @@
     "name": "Rajang",
     "render": "color/render/rajang.png",
     "icon": "color/icon/rajang_icon.png",
-    "species": "Fanged Beasts",
+    "species": "Fanged Beast",
     "description": "An ultra-aggressive creature that few have a chance of surviving against. Sports powerful arms that pack a punch, and turns gold when angry.",
     "useful_info": "Rajang is most dangerous when its arms are powered up, and can even destroy shock traps. Pitfall traps are effective, but only when it's enraged. Will immediately attack anything that invades its territory.",
     "elements": ["Thunder"],

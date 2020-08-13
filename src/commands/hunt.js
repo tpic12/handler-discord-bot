@@ -56,18 +56,25 @@ module.exports = {
 
     let hunters =
       hunt.hunters.length > 1 ? hunt.hunters.join(", ") : hunt.hunters;
+    let member = message.guild.member(message.author);
+    let roleIds = member._roles;
+    let roles = member.guild.roles.cache
+      .filter((r) => roleIds.includes(r.id))
+      .map((i) => i.name);
+
+    // console.log("role: ", roleIds);
+    // console.log(roles.join(" | "));
+    let footer = roles.length
+      ? "Created by: " + message.author.username + ` [ ${roles.join(" | ")} ] `
+      : "Created by: " + message.author.username;
+
     embed
       .setTitle("Hunt")
       .addField("Objective:", hunt.desc)
       .addField("Time:", times)
       .addField(`Hunters: 1/4`, hunters)
       .setColor(0xa555bd)
-      .setFooter(
-        "Created by: " +
-          message.author.username +
-          " | " +
-          moment(date).calendar()
-      );
+      .setFooter(footer);
     message.channel.bulkDelete(5);
     let sent = await message.channel
       .send(embed)

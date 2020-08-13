@@ -45,7 +45,7 @@ bot.on("message", async (message) => {
       bot.commands.get("help").execute(message, embed, args);
       break;
     case "locale":
-      if (!args[1] || args[1].toLowerCase() == "the")
+      if (!args[1] || args[1].toLowerCase() == "the" || args[1].length < 4)
         return message.reply("Please specify a locale to search!");
       let area = args.slice(1).join(" ");
       bot.commands.get("locale").execute(message, area, embed, args);

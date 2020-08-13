@@ -42,7 +42,7 @@ module.exports = {
     // monsterValue.weakness.replace(replaceStr, "⭐");⭐⭐⭐
     monsterValue[0].weakness.forEach((wk) => {
       let item = wk.split(" ");
-      console.log(item);
+      // console.log(item);
       if (item[1].substring(1, item[1].length - 1) === "⭐⭐⭐") {
         weakness3.push(item[0]);
       } else if (item[1].substring(1, item[1].length - 1) === "⭐⭐") {
