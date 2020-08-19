@@ -197,6 +197,17 @@ const HuntService = {
       sent.edit(addAltHunterEmbed);
     }
   },
+  deleteHunt(message, sent) {
+    let hunt = Hunts.get(
+      message.author.id + " G " + message.guild.name + " M " + sent.id
+    );
+    Hunts.delete(
+      message.author.id + " G " + message.guild.name + " M " + sent.id
+    );
+    let deleteMessage = `**${hunt.desc}** hunt deleted...`;
+    message.channel.messages.delete(sent);
+    message.channel.send(deleteMessage);
+  },
 };
 
 module.exports = HuntService;

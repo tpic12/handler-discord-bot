@@ -29,8 +29,8 @@ bot.on("message", async (message) => {
   let embed = new Discord.MessageEmbed();
 
   switch (args[0]) {
-    case "test":
-      bot.commands.get("test").execute(message, args);
+    case "time":
+      bot.commands.get("time").execute(message, args);
       break;
     case "hunt":
       bot.commands.get("hunt").execute(message, embed, args);

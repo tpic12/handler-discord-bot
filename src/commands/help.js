@@ -13,11 +13,11 @@ module.exports = {
       )
       .addField(
         "*locale [area]",
-        "Use this command to see all the monsters that live in that locale! For the area name use any word that is in the area name. `ex: *locale rotten => Rotten Vale, *locale forest => The Ancient Forest`"
+        "Use this command to see all the monsters that live in that locale organized by species! For the area name use any word that is in the area name. `ex: *locale rotten => Rotten Vale, *locale forest => The Ancient Forest`"
       )
       .addField(
         "*hunt",
-        "Use this command to create a new hunt for friends to sign up using message reactions, just follow the prompts and type your answer `ex: *hunt [handler question: What do you want to hunt?] rajang ...`"
+        "Use this command to create a new hunt for friends to sign up using message reactions, just follow the prompts and type your answer `ex: *hunt [objective of hunt], [handler question: When? example: 7:35 pm 07/23]. Hunters can use the reactions under the message to join,leave,join as an alt, or delete(creator only) the hunt.`"
       )
       .setFooter("Bot created by B1Z3RK");
     message.author.send(embed);
