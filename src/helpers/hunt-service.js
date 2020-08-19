@@ -3,12 +3,12 @@ const { MessageEmbed } = require("discord.js");
 const moment = require("moment");
 
 const HuntService = {
-  removeHunter(hunter, message, sent) {
+  removeHunter(hunter, message, sent, formattedDate) {
     const removeHunterEmbed = new MessageEmbed();
     let hunt = Hunts.get(
       message.author.id + " G " + message.guild.name + " M " + sent.id
     );
-    // console.log("OG: ", hunt);
+
     let newHunterArr = hunt.hunters.filter(
       (name) => name !== hunter.username || name === "N/A"
     );
@@ -26,62 +26,56 @@ const HuntService = {
       hunt
     );
 
-    let date = new Date(hunt.time);
-    let est = moment(new Date(hunt.time))
-      .tz("America/new_york")
-      .format("M/D dd h:mma z");
-    let cst = moment(new Date(hunt.time))
-      .tz("America/indiana/tell_city")
-      .format("M/D dd h:mma z");
-    let mst = moment(new Date(hunt.time))
-      .tz("America/denver")
-      .format("M/D dd h:mma z");
-    let pst = moment(new Date(hunt.time))
-      .tz("America/los_angeles")
-      .format("M/D dd h:mma z");
-    let times = [est, cst, mst, pst];
     let size = hunt.hunters.includes("N/A") ? "0" : hunt.hunters.length;
-    console.log("party size: ", size);
+    let member = message.guild.member(message.author);
+    let roleIds = member._roles;
+    let roles = member.guild.roles.cache
+      .filter((r) => roleIds.includes(r.id))
+      .map((i) => i.name);
+    let footer = roles.length
+      ? "Created by: " + message.author.username + ` [ ${roles.join(" | ")} ] `
+      : "Created by: " + message.author.username;
+
     if (!hunt.altHunters.length) {
       removeHunterEmbed
         .setTitle("Hunt")
         .addField("Objective:", hunt.desc)
         // .addField("Time:", hunt.time.slice(0, hunt.time.length - 5), true)
-        .addField("Time:", times)
+        .addField("Time:", hunt.time)
         .addField(`Hunters: ${size}/4`, hunt.hunters)
         .setColor(0xa555bd)
-        .setFooter(
-          "Created by: " +
-            message.author.username +
-            " | " +
-            moment(date).calendar()
-        );
+        .setFooter(footer)
+        .setTimestamp(formattedDate);
     } else {
       removeHunterEmbed
         .setTitle("Hunt")
         .addField("Objective:", hunt.desc)
         // .addField("Time:", hunt.time.slice(0, hunt.time.length - 5), true)
-        .addField("Time:", times)
+        .addField("Time:", hunt.time)
         .addField(`Hunters: ${size}/4`, hunt.hunters, true)
         .addField("Alternates:", hunt.altHunters, true)
         .setColor(0xa555bd)
-        .setFooter(
-          "Created by: " +
-            message.author.username +
-            " | " +
-            moment(date).calendar()
-        );
+        .setFooter(footer)
+        .setTimestamp(formattedDate);
     }
 
     sent.edit(removeHunterEmbed);
   },
-  addHunter(hunter, message, sent) {
+  addHunter(hunter, message, sent, formattedDate) {
     const addHunterEmbed = new MessageEmbed();
     let hunt = Hunts.get(
       message.author.id + " G " + message.guild.name + " M " + sent.id
     );
     let size = hunt.hunters.includes("N/A") ? "0" : hunt.hunters.length;
-    console.log("party size: ", size);
+
+    let member = message.guild.member(message.author);
+    let roleIds = member._roles;
+    let roles = member.guild.roles.cache
+      .filter((r) => roleIds.includes(r.id))
+      .map((i) => i.name);
+    let footer = roles.length
+      ? "Created by: " + message.author.username + ` [ ${roles.join(" | ")} ] `
+      : "Created by: " + message.author.username;
 
     if (
       hunt.huntersId.includes(hunter.hunterId) ||
@@ -98,59 +92,45 @@ const HuntService = {
         hunt
       );
       size = hunt.hunters.length;
-      let date = new Date(hunt.time);
-      let est = moment(new Date(hunt.time))
-        .tz("America/new_york")
-        .format("M/D dd h:mma z");
-      let cst = moment(new Date(hunt.time))
-        .tz("America/indiana/tell_city")
-        .format("M/D dd h:mma z");
-      let mst = moment(new Date(hunt.time))
-        .tz("America/denver")
-        .format("M/D dd h:mma z");
-      let pst = moment(new Date(hunt.time))
-        .tz("America/los_angeles")
-        .format("M/D dd h:mma z");
-      let times = [est, cst, mst, pst];
 
       if (!hunt.altHunters.length) {
         addHunterEmbed
           .setTitle("Hunt")
           .addField("Objective:", hunt.desc)
           // .addField("Time:", hunt.time.slice(0, hunt.time.length - 5), true)
-          .addField("Time:", times)
+          .addField("Time:", hunt.time)
           .addField(`Hunters: ${size}/4`, hunt.hunters)
           .setColor(0xa555bd)
-          .setFooter(
-            "Created by: " +
-              message.author.username +
-              " | " +
-              moment(date).calendar()
-          );
+          .setFooter(footer)
+          .setTimestamp(formattedDate);
       } else {
         addHunterEmbed
           .setTitle("Hunt")
           .addField("Objective:", hunt.desc)
           // .addField("Time:", hunt.time.slice(0, hunt.time.length - 5), true)
-          .addField("Time:", times)
+          .addField("Time:", hunt.time)
           .addField(`Hunters: ${size}/4`, hunt.hunters, true)
           .addField("Alternates:", hunt.altHunters, true)
           .setColor(0xa555bd)
-          .setFooter(
-            "Created by: " +
-              message.author.username +
-              " | " +
-              moment(date).calendar()
-          );
+          .setFooter(footer)
+          .setTimestamp(formattedDate);
       }
       sent.edit(addHunterEmbed);
     }
   },
-  addAltHunter(hunter, message, sent) {
+  addAltHunter(hunter, message, sent, formattedDate) {
     const addAltHunterEmbed = new MessageEmbed();
     let hunt = Hunts.get(
       message.author.id + " G " + message.guild.name + " M " + sent.id
     );
+    let member = message.guild.member(message.author);
+    let roleIds = member._roles;
+    let roles = member.guild.roles.cache
+      .filter((r) => roleIds.includes(r.id))
+      .map((i) => i.name);
+    let footer = roles.length
+      ? "Created by: " + message.author.username + ` [ ${roles.join(" | ")} ] `
+      : "Created by: " + message.author.username;
     if (
       hunt.huntersId.includes(hunter.hunterId) ||
       hunt.altHuntersId.includes(hunter.hunterId)
@@ -165,35 +145,17 @@ const HuntService = {
         hunt
       );
 
-      let date = new Date(hunt.time);
-      let est = moment(new Date(hunt.time))
-        .tz("America/new_york")
-        .format("M/D dd h:mma z");
-      let cst = moment(new Date(hunt.time))
-        .tz("America/indiana/tell_city")
-        .format("M/D dd h:mma z");
-      let mst = moment(new Date(hunt.time))
-        .tz("America/denver")
-        .format("M/D dd h:mma z");
-      let pst = moment(new Date(hunt.time))
-        .tz("America/los_angeles")
-        .format("M/D dd h:mma z");
-      let times = [est, cst, mst, pst];
       let size = hunt.hunters.includes("N/A") ? "0" : hunt.hunters.length;
       addAltHunterEmbed
         .setTitle("Hunt")
         .addField("Objective:", hunt.desc)
         // .addField("Time:", hunt.time.slice(0, hunt.time.length - 5), true)
-        .addField("Time:", times)
+        .addField("Time:", hunt.time)
         .addField(`Hunters: ${size}/4`, hunt.hunters, true)
         .addField("Alternates:", hunt.altHunters, true)
         .setColor(0xa555bd)
-        .setFooter(
-          "Created by: " +
-            message.author.username +
-            " | " +
-            moment(date).calendar()
-        );
+        .setFooter(footer)
+        .setTimestamp(formattedDate);
       sent.edit(addAltHunterEmbed);
     }
   },

@@ -33,6 +33,7 @@ bot.on("message", async (message) => {
       bot.commands.get("time").execute(message, args);
       break;
     case "hunt":
+      if (!args[1]) return message.reply("Please specify monster to hunt");
       bot.commands.get("hunt").execute(message, embed, args);
       break;
     case "monster":

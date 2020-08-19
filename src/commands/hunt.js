@@ -39,11 +39,11 @@ module.exports = {
     let tz = proposedTime.split(" ")[2];
     let fullDate = fullDateRegExp.exec(proposedTime);
     let partialDate = timeRegExp.exec(proposedTime);
-    console.log("precheck: ", proposedTime);
-    console.log("full date: ", !!fullDate);
-    console.log("partial date: ", !!partialDate);
+    // console.log("precheck: ", proposedTime);
+    // console.log("full date: ", !!fullDate);
+    // console.log("partial date: ", !!partialDate);
     if (!fullDate && !partialDate) {
-      console.log("WRONG DATE: ", proposedTime);
+      // console.log("WRONG DATE: ", proposedTime);
       message.reply(
         "Incorrect time format, `example: 7:35 pm est 07/23/2020 or 7:35 pm est if today`"
       );
@@ -54,7 +54,7 @@ module.exports = {
         //no formatting necessary
         formattedDate = new Date(proposedTime);
         let tempDate = proposedTime.split(" ");
-        console.log("tempdate: ", tempDate[3]);
+        // console.log("tempdate: ", tempDate[3]);
         let d = moment(new Date(tempDate[3])).format("MMM Do, ddd");
         displayDate = `${d} ${tempDate.splice(0, 3).join(" ")}`;
       } else if (partialDate) {
@@ -69,10 +69,10 @@ module.exports = {
         );
         displayDate = `${d} ${proposedTime}`;
       }
-      console.log("formattedDate: ", formattedDate);
+      // console.log("formattedDate: ", formattedDate);
       // console.log("toISO: ", proposedTime.toISOString());
       hunt.time = displayDate;
-      console.log("display time: ", hunt.time);
+      // console.log("display time: ", hunt.time);
 
       hunt.timeMS = countdown(new Date(), formattedDate, countdown.MILLISECONDS)
         .toString()
@@ -155,21 +155,21 @@ module.exports = {
               hunter.username !== "Handler" &&
               hunter.username !== "Handler-dev"
             ) {
-              HuntService.addHunter(hunter, message, sent);
+              HuntService.addHunter(hunter, message, sent, formattedDate);
             }
             if (
               reaction.emoji.name === "➖" &&
               hunter.username !== "Handler" &&
               hunter.username !== "Handler-dev"
             ) {
-              HuntService.removeHunter(hunter, message, sent);
+              HuntService.removeHunter(hunter, message, sent, formattedDate);
             }
             if (
               reaction.emoji.name === "❔" &&
               hunter.username !== "Handler" &&
               hunter.username !== "Handler-dev"
             ) {
-              HuntService.addAltHunter(hunter, message, sent);
+              HuntService.addAltHunter(hunter, message, sent, formattedDate);
             }
             if (
               reaction.emoji.name === "💀" &&
