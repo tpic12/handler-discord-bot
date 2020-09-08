@@ -19,6 +19,7 @@ module.exports = {
         "*hunt [objective]",
         "Use this command to create a new hunt for friends to sign up using message reactions, just follow the prompts and type your answer `ex: *hunt [objective of hunt], [handler question: When? example: 7:35 pm est 07/23/2020 OR 7:35 pm est if today]. Hunters can use the reactions under the message to join, leave, join as an alt, or delete(creator only) the hunt.`"
       );
+    console.log(message.author);
     message.author.send(embed);
   },
 };

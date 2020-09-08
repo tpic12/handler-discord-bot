@@ -167,7 +167,8 @@
     "weakness": ["Water-(Mud) (⭐⭐⭐)", "Fire (⭐⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐)", "Poison (⭐⭐⭐)", "Paralysis (⭐⭐⭐)", "Blast (⭐⭐⭐)", "Sleep (⭐⭐)", "Stun (⭐)"],
     "locations": [{
         "name": "Wildspire Waste",
-        "color": "0xF2A22C"
+        "color": "0xF2A22C",
+        "icon": "localeWaste.png"
       },
       {
         "name": "The Guiding Lands",
@@ -724,7 +725,8 @@
     "weakness": ["Ice (⭐⭐⭐)", "Water (⭐⭐)", "Dragon (⭐⭐)", "Thunder-(Gold) (⭐⭐⭐)", "Dragon-(Gold) (⭐)", "Poison (⭐)", "Sleep (⭐)", "Paralysis (⭐)", "Blast (⭐)", "Stun (⭐)"],
     "locations": [{
         "name": "Caverns of El Dorado",
-        "color": "color/locale/caverns-of-el-dorado.jpg"
+        "color": "color/locale/caverns-of-el-dorado.jpg",
+        "icon": "mapIcon.png"
       }
 
     ]
@@ -1209,7 +1211,8 @@
       },
       {
         "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
+        "color": "0xFFFFFF",
+        "icon": "mapIcon.png"
       }
     ]
   },
@@ -1226,8 +1229,9 @@
     "resistances": ["None"],
     "weakness": ["Dragon-(Elderseal) (⭐⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐⭐)", "Water (⭐⭐)", "Fire (⭐⭐)", "Dragon (⭐⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
-      "name": "The Guiding Lands",
-      "color": "0xFFFFFF"
+      "name": "Secluded Valley",
+      "color": "0x750099",
+      "icon": "mapIcon.png"
     }]
   },
 
@@ -1244,27 +1248,33 @@
     "weakness": ["Thunder (⭐⭐⭐)", "Dragon (⭐⭐⭐)", "Fire (⭐⭐)", "Water (⭐⭐)", "Ice (⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐⭐⭐)", "Paralysis (⭐⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
-        "color": "0x1E9E47"
+        "color": "0x1E9E47",
+        "icon": "localeForest.png"
       },
       {
         "name": "Wildspire Waste",
-        "color": "0xF2A22C"
+        "color": "0xF2A22C",
+        "icon": "localeWaste.png"
       },
       {
         "name": "Rotten Vale",
-        "color": "0xBF5726"
+        "color": "0xBF5726",
+        "icon": "localeRotten.png"
       },
       {
         "name": "Coral Highlands",
-        "color": "0x86E0D4"
+        "color": "0x86E0D4",
+        "icon": "localeCoral.png"
       },
       {
         "name": "Elder's Recess",
-        "color": "0xED512F"
+        "color": "0xED512F",
+        "icon": "localeElder.png"
       },
       {
         "name": "Hoarfrost Reach",
-        "color": "0x8ABEEB"
+        "color": "0x8ABEEB",
+        "icon": "localeFrost.png"
       },
       {
         "name": "The Guiding Lands",
@@ -1725,7 +1735,9 @@
     "resistances": ["Fire (Fire Active)", "Ice (Ice Active)"],
     "weakness": ["Dragon-(FireActive) (⭐)", "Ice-(FireActive) (⭐⭐⭐)", "Water-(FireActive) (⭐⭐)", "Thunder-(FireActive) (⭐)", "Dragon-(IceActive) (⭐)", "Fire-(IceActive) (⭐⭐⭐)", "Water-(IceActive) (⭐)", "Thunder-(IceActive) (⭐⭐)", "Dragon-(DragonActive) (⭐⭐)", "Ice-(DragonActive) (⭐)", "Water-(DragonActive) (⭐)", "Thunder-(DragonActive) (⭐)", "Fire-(DragonActive) (⭐)", "Poison (⭐)", "Sleep (⭐)", "Paralysis (⭐)", "Blast (⭐)", "Stun (⭐)"],
     "locations": [{
-      "name": "Secluded Valley"
+      "name": "Secluded Valley",
+      "color": "0x750099",
+      "icon": "mapIcon.png"
     }]
   }
 ]

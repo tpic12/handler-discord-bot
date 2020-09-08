@@ -1,4 +1,5 @@
 const MonsterList = require("../assets/monsters.json");
+const Discord = require("discord.js");
 
 module.exports = {
   name: "locale",
@@ -7,12 +8,17 @@ module.exports = {
     let monsters = {};
     let areaTitle = "";
     let color = "";
+    let iconSrc = "";
     let monsterFields = [];
     let counter = 0;
     let isInArea = (locale) => {
       if (locale.name.toLowerCase().includes(area.toLowerCase())) {
         areaTitle = locale.name;
         color = locale.color;
+        if (locale.icon) {
+          iconSrc = locale.icon;
+        }
+
         return true;
       }
     };
@@ -46,12 +52,16 @@ module.exports = {
     if (!Object.keys(sortedMonsters).length) {
       message.reply(`Sorry I can\'t find any monsters in **${args[1]}**`);
     } else {
+      let attachment = new Discord.MessageAttachment(
+        `./src/assets/localeIcons/${iconSrc}`,
+        iconSrc
+      );
+      let thumbnail = `attachment://${iconSrc}`;
       embed
         .setTitle("**" + areaTitle + "**")
         .addFields(monsterFields)
-        .setThumbnail(
-          "https://github.com/JoseTorralba/MHW-Monster-List/blob/master/img/locale/map_icon.png?raw=true"
-        )
+        .attachFiles(attachment)
+        .setThumbnail(thumbnail)
         .setColor(color);
       if (counter <= 7) {
         message.channel.send(embed);
@@ -75,3 +85,4 @@ module.exports = {
  * -Bird Wyvern
  * -Relict
  */
+//
