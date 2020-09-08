@@ -16,7 +16,7 @@ module.exports = {
         "Use this command to see all the monsters that live in that locale organized by species! For the area name use any word that is in the area name. `ex: *locale rotten => Rotten Vale, *locale forest => The Ancient Forest`"
       )
       .addField(
-        "*hunt",
+        "*hunt [objective]",
         "Use this command to create a new hunt for friends to sign up using message reactions, just follow the prompts and type your answer `ex: *hunt [objective of hunt], [handler question: When? example: 7:35 pm est 07/23/2020 OR 7:35 pm est if today]. Hunters can use the reactions under the message to join, leave, join as an alt, or delete(creator only) the hunt.`"
       );
     message.author.send(embed);

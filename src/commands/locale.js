@@ -4,16 +4,7 @@ module.exports = {
   name: "locale",
   description: "Shows list of monsters by locale, and info about locale",
   async execute(message, area, embed, args) {
-    let monsters = {
-      "Fanged-Beast": [],
-      "Fanged-Wyvern": [],
-      "Flying-Wyvern": [],
-      "Piscine-Wyvern": [],
-      "Brute-Wyvern": [],
-      "Elder-Dragon": [],
-      "Bird-Wyvern": [],
-      Relict: [],
-    };
+    let monsters = {};
     let areaTitle = "";
     let color = "";
     let monsterFields = [];
@@ -28,57 +19,43 @@ module.exports = {
     MonsterList.forEach((monster) => {
       if (monster.locations.some(isInArea)) {
         let species = monster.species;
-        switch (species) {
-          case "Fanged Beast":
-            monsters["Fanged-Beast"].push(monster.name);
-            break;
-          case "Fanged Wyvern":
-            monsters["Fanged-Wyvern"].push(monster.name);
-            break;
-          case "Brute Wyvern":
-            monsters["Brute-Wyvern"].push(monster.name);
-            break;
-          case "Flying Wyvern":
-            monsters["Flying-Wyvern"].push(monster.name);
-            break;
-          case "Piscine Wyvern":
-            monsters["Piscine-Wyvern"].push(monster.name);
-            break;
-          case "Bird Wyvern":
-            monsters["Bird-Wyvern"].push(monster.name);
-            break;
-          case "Elder Dragon":
-            monsters["Elder-Dragon"].push(monster.name);
-            break;
-          case "Relict":
-            monsters.Relict.push(monster.name);
-            break;
+        if (!monsters[species]) {
+          monsters[species] = [monster.name];
+        } else {
+          monsters[species].push(monster.name);
         }
       }
     });
-    Object.keys(monsters).forEach((key) => {
-      if (!monsters[key].length) {
-        monsters[key].push("None");
-        counter++;
-      }
+    function sortObj(obj) {
+      return Object.keys(obj)
+        .sort()
+        .reduce(function (result, key) {
+          result[key] = obj[key];
+          return result;
+        }, {});
+    }
+    let sortedMonsters = sortObj(monsters);
+    Object.keys(sortedMonsters).forEach((key) => {
       let name = key.split("-").join(" ");
       monsterFields.push({
         name: "**" + name + ": **",
-        value: monsters[key].join(", "),
+        value: sortedMonsters[key].join(", "),
       });
-      if (counter > 7) {
-        message.reply(`Sorry I can\'t find any monsters in **${args[1]}**`);
-      }
     });
-    embed
-      .setTitle("**" + areaTitle + "**")
-      .addFields(monsterFields)
-      .setThumbnail(
-        "https://github.com/JoseTorralba/MHW-Monster-List/blob/master/img/locale/map_icon.png?raw=true"
-      )
-      .setColor(color);
-    if (counter <= 7) {
-      message.channel.send(embed);
+
+    if (!Object.keys(sortedMonsters).length) {
+      message.reply(`Sorry I can\'t find any monsters in **${args[1]}**`);
+    } else {
+      embed
+        .setTitle("**" + areaTitle + "**")
+        .addFields(monsterFields)
+        .setThumbnail(
+          "https://github.com/JoseTorralba/MHW-Monster-List/blob/master/img/locale/map_icon.png?raw=true"
+        )
+        .setColor(color);
+      if (counter <= 7) {
+        message.channel.send(embed);
+      }
     }
   },
 };
