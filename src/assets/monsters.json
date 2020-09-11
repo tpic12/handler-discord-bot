@@ -8,6 +8,7 @@
     "elements": ["None"],
     "ailments": ["Defense Down"],
     "resistances": ["None"],
+    "threat-level": "🔥🔥",
     "weakness": ["Fire (⭐⭐⭐)", "Dragon (⭐⭐)", "Dragon-(Crystalized) (⭐)", "Thunder (⭐⭐)", "Water (⭐)", "Ice (⭐)", "Blast (⭐⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Rotten Vale",
@@ -30,6 +31,7 @@
     "elements": ["None"],
     "ailments": ["Bleeding"],
     "resistances": ["Water", "Sleep"],
+    "threat-level": "none",
     "weakness": ["Fire (⭐⭐⭐)", "Dragon (⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐)", "Poison (⭐⭐)", "Paralysis (⭐)", "Blast (⭐)", "Stun (⭐)"],
     "locations": [{
       "name": "Ancient Forest",
@@ -47,6 +49,7 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight"],
     "resistances": ["Fire"],
+    "threat-level": "🔥",
     "weakness": ["Water (⭐⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐)", "Poison (⭐⭐)", "Paralysis (⭐⭐)", "Sleep (⭐⭐)", "Blast (⭐)", "Stun (⭐⭐)"],
 
     "locations": [{
@@ -74,6 +77,7 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight", "Poison", "Stun"],
     "resistances": ["Fire"],
+    "threat-level": "🔥🔥",
     "weakness": ["Dragon (⭐⭐⭐)", "Ice (⭐⭐)", "Water (⭐)", "Thunder (⭐)", "Poison (⭐)", "Blast (⭐)", "Paralysis (⭐⭐)", "Sleep (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
@@ -100,6 +104,7 @@
     "elements": ["Ice"],
     "ailments": ["Iceblight in hoarfrost reach", "Waterblight in coral highlands", "Fireblight in elder's recess"],
     "resistances": ["Ice", "Water"],
+    "threat-level": "🔥",
     "weakness": ["Dragon (⭐⭐⭐)", "Fire (⭐⭐)", "Thunder (⭐)", "Blast (⭐⭐⭐)", "Stun (⭐⭐⭐)", "Poison (⭐⭐)", "Paralysis (⭐⭐)", "Sleep (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
@@ -142,6 +147,7 @@
     "elements": ["Ice"],
     "ailments": ["Iceblight"],
     "resistances": ["Ice", "Water"],
+    "threat-level": "🔥🔥",
     "weakness": ["Fire (⭐⭐⭐)", "Thunder (⭐⭐)", "Dragon (⭐)", "Paralysis (⭐⭐)", "Sleep (⭐⭐)", "Poison (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Hoarfrost Reach",
@@ -164,6 +170,7 @@
     "elements": ["None"],
     "ailments": ["Waterblight"],
     "resistances": ["Thunder", "Fire with mud", "Water with no mud"],
+    "threat-level": "🔥",
     "weakness": ["Water-(Mud) (⭐⭐⭐)", "Fire (⭐⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐)", "Poison (⭐⭐⭐)", "Paralysis (⭐⭐⭐)", "Blast (⭐⭐⭐)", "Sleep (⭐⭐)", "Stun (⭐)"],
     "locations": [{
         "name": "Wildspire Waste",
@@ -187,6 +194,7 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight"],
     "resistances": ["Fire"],
+    "threat-level": "🔥🔥",
     "weakness": ["Thunder (⭐⭐⭐)", "Dragon (⭐⭐)", "Ice (⭐⭐)", "Water (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐)", "Stun (⭐)"],
     "locations": [{
         "name": "Ancient Forest",
@@ -221,6 +229,7 @@
     "elements": ["Fire", "Thunder"],
     "ailments": ["Bleeding", "Fireblight", "Thunderblight"],
     "resistances": ["None"],
+    "threat-level": "none",
     "weakness": ["Dragon (⭐⭐⭐)", "Ice (⭐⭐)", "Water (⭐⭐)", "Thunder (⭐)", "Fire (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
       "name": "Elder's Recess",
@@ -238,16 +247,12 @@
     "elements": ["Ice"],
     "ailments": ["Iceblight"],
     "resistances": ["Ice", "Dragon"],
+    "threat-level": "🔥",
     "weakness": ["Fire (⭐⭐⭐)", "Thunder (⭐⭐)", "Water (⭐)", "Blast (⭐⭐⭐)", "Paralysis (⭐⭐)", "Sleep (⭐⭐)", "Poison (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
-        "name": "Hoarfrost Reach",
-        "color": "0x8ABEEB"
-      },
-      {
-        "name": "Hoarfrost Reach",
-        "color": "0xFFFFFF"
-      }
-    ]
+      "name": "Hoarfrost Reach",
+      "color": "0x8ABEEB"
+    }]
   },
 
   {
@@ -260,6 +265,7 @@
     "elements": ["None"],
     "ailments": ["None"],
     "resistances": ["Fire", "Dragon"],
+    "threat-level": "🔥🔥",
     "weakness": ["Ice (⭐⭐⭐)", "Water (⭐⭐)", "Thunder (⭐)", "Paralysis (⭐⭐⭐)", "Stun (⭐)", "Paralysis (⭐⭐)", "Sleep (⭐⭐)", "Blast (⭐⭐)"],
     "locations": [{
         "name": "Wildspire Waste",
@@ -282,6 +288,7 @@
     "elements": ["None"],
     "ailments": ["Effluvia"],
     "resistances": ["Water"],
+    "threat-level": "🔥🔥🔥",
     "weakness": ["Fire (⭐⭐)", "Dragon (⭐⭐)", "Ice (⭐)", "Thunder (⭐)", "Blast (⭐⭐)", "Poison (⭐)", "Paralysis (⭐)", "Sleep (⭐)", "Stun (⭐)"],
     "locations": [{
         "name": "Ancient Forest",
@@ -308,6 +315,7 @@
     "elements": ["None"],
     "ailments": ["Blastscourge"],
     "resistances": ["Fire"],
+    "threat-level": "🔥🔥",
     "weakness": ["Ice (⭐⭐⭐)", "Water (⭐⭐)", "Thunder (⭐)", "Dragon (⭐)", "Blast (⭐)", "Poison (⭐⭐)", "Paralysis (⭐⭐)", "Sleep (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Elder's Recess",
@@ -330,6 +338,7 @@
     "elements": ["None"],
     "ailments": ["Fireblight", "Waterblight"],
     "resistances": ["Fire"],
+    "threat-level": "🔥🔥",
     "weakness": ["Water (⭐⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐)", "Dragon (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Elder's Recess",
@@ -352,6 +361,7 @@
     "elements": ["Water"],
     "ailments": ["Waterblight"],
     "resistances": ["Water"],
+    "threat-level": "🔥",
     "weakness": ["Ice (⭐⭐⭐)", "Thunder (⭐⭐)", "Fire (⭐)", "Dragon (⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Coral Highlands",
@@ -374,6 +384,7 @@
     "elements": ["Dragon"],
     "ailments": ["Dragonblight", "Defense Down", "Fireblight On Lava Terrain", "Iceblight On Icy Terrain", "Waterblight On Water Terrain", "Effluvial Buildup (In Rotten Vale)"],
     "resistances": ["None"],
+    "threat-level": "🔥🔥",
     "weakness": ["Thunder (⭐⭐⭐)", "Dragon (⭐⭐⭐)", "Fire (⭐⭐)", "Water (⭐⭐)", "Ice (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Blast (⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
@@ -408,6 +419,7 @@
     "elements": ["None"],
     "ailments": ["Stun"],
     "resistances": ["Fire"],
+    "threat-level": "🔥🔥",
     "weakness": ["Ice (⭐⭐⭐)", "Dragon (⭐⭐)", "Water (⭐⭐)", "Thunder (⭐)", "Paralysis (⭐⭐⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐)"],
     "locations": [{
         "name": "Wildspire Waste",
@@ -430,6 +442,7 @@
     "elements": ["Fire"],
     "ailments": ["Blastblight"],
     "resistances": ["Fire"],
+    "threat-level": "none",
     "weakness": ["Thunder (⭐⭐⭐)", "Water (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)", "Blast (⭐)"],
     "locations": [{
         "name": "Elder's Recess",
@@ -452,6 +465,7 @@
     "elements": ["Dragon"],
     "ailments": ["Dragonblight", "Bleeding"],
     "resistances": ["None"],
+    "threat-level": "🔥🔥",
     "weakness": ["Water (⭐⭐⭐)", "Fire (⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐)", "Poison (⭐⭐⭐)", "Paralysis (⭐⭐⭐)", "Sleep (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
@@ -494,6 +508,7 @@
     "elements": ["Thunder"],
     "ailments": ["Thunderblight"],
     "resistances": ["Thunder"],
+    "threat-level": "🔥🔥",
     "weakness": ["Ice (⭐⭐⭐)", "Ice-(Charged) (⭐⭐)", "Water-(Charged) (⭐⭐⭐)", "Water (⭐⭐)", "Fire (⭐⭐)", "Dragon (⭐)", "Blast (⭐)", "Poison (⭐⭐)", "Paralysis (⭐⭐)", "Sleep (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
@@ -533,6 +548,7 @@
     "elements": ["Thunder"],
     "ailments": ["Defense Down"],
     "resistances": ["Fire", "Dragon", "Thunder"],
+    "threat-level": "🔥🔥🔥",
     "weakness": ["Ice (⭐⭐⭐)", "Water (⭐)", "Poison (⭐)", "Sleep (⭐)", "Paralysis (⭐)", "Blast (⭐⭐)", "Stun (⭐)"],
     "locations": [{
       "name": "Hoarfrost Reach",
@@ -550,6 +566,7 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight"],
     "resistances": ["Fire"],
+    "threat-level": "🔥🔥",
     "weakness": ["Water (⭐⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐⭐)", "Thunder (⭐)", "Poison (⭐⭐)", "Paralysis (⭐⭐)", "Sleep (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
@@ -584,6 +601,7 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight", "Poison"],
     "resistances": ["Dragon", "Fire"],
+    "threat-level": "🔥🔥",
     "weakness": ["Thunder (⭐⭐⭐)", "Water (⭐⭐)", "Ice (⭐)", "Poison (⭐)", "Blast (⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Elder's Recess",
@@ -606,6 +624,7 @@
     "elements": ["None"],
     "ailments": ["Paralysis"],
     "resistances": ["Thunder"],
+    "threat-level": "none",
     "weakness": ["Water (⭐⭐⭐)", "Fire (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐)", "Sleep (⭐⭐⭐)", "Paralysis (⭐)", "Poison (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Rotten Vale",
@@ -628,6 +647,7 @@
     "elements": ["None"],
     "ailments": ["None"],
     "resistances": ["Water"],
+    "threat-level": "none",
     "weakness": ["Fire (⭐⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐⭐⭐)", "Paralysis (⭐⭐⭐)", "Blast (⭐⭐⭐)", "Stun (⭐⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
@@ -650,6 +670,7 @@
     "elements": ["Water"],
     "ailments": ["Waterblight"],
     "resistances": ["Water with no mud", "Thunder with mud", "Fire with mud"],
+    "threat-level": "🔥",
     "weakness": ["Thunder (⭐⭐⭐)", "Water-(Mud) (⭐⭐⭐)", "Fire (⭐)", "Ice (⭐)", "Dragon (⭐)", "Stun (⭐⭐⭐)", "Poison (⭐⭐)", "Paralysis (⭐⭐)", "Sleep (⭐)", "Blast (⭐)"],
     "locations": [{
         "name": "Wildspire Waste",
@@ -670,6 +691,7 @@
     "elements": ["Thunder"],
     "ailments": ["Thunderblight"],
     "resistances": ["Thunder", "Paralysis"],
+    "threat-level": "🔥🔥🔥",
     "weakness": ["Fire (⭐⭐⭐)", "Water (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐)", "Sleep (⭐⭐)", "Blast (⭐⭐)", "Poison (⭐)", "Stun (⭐)"],
     "locations": [{
         "name": "Coral Highlands",
@@ -696,6 +718,7 @@
     "elements": ["None"],
     "ailments": ["None"],
     "resistances": ["None"],
+    "threat-level": "none",
     "weakness": ["Water (⭐⭐⭐)", "Fire (⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
@@ -722,6 +745,7 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight"],
     "resistances": ["Thunder", "Fire", "Ice when in gold"],
+    "threat-level": "none",
     "weakness": ["Ice (⭐⭐⭐)", "Water (⭐⭐)", "Dragon (⭐⭐)", "Thunder-(Gold) (⭐⭐⭐)", "Dragon-(Gold) (⭐)", "Poison (⭐)", "Sleep (⭐)", "Paralysis (⭐)", "Blast (⭐)", "Stun (⭐)"],
     "locations": [{
         "name": "Caverns of El Dorado",
@@ -742,6 +766,7 @@
     "elements": ["None"],
     "ailments": ["Stun"],
     "resistances": ["Water", "Ice"],
+    "threat-level": "🔥🔥🔥",
     "weakness": ["Thunder (⭐⭐⭐)", "Dragon (⭐⭐)", "Fire (⭐)", "Poison (⭐⭐⭐)", "Blast (⭐⭐⭐)", "Stun (⭐⭐)", "Sleep (⭐)", "Paralysis (⭐)"],
     "locations": [{
         "name": "Ancient Forest",
@@ -767,6 +792,7 @@
     "useful_info": "The hardened magma on Lavasioth's body becomes softer as it swims through the lava. Attack its armor immediately after it surfaces to increase your chances of destroying it before it rehardens.",
     "elements": ["Fire"],
     "ailments": ["Fireblight"],
+    "threat-level": "🔥🔥",
     "resistances": ["Fire when not hardened", "Thunder when hardened", "Ice when hardened"],
     "weakness": ["Water-(Hardened) (⭐⭐)", "Fire-(Hardened) (⭐)", "Water (⭐⭐⭐)", "Ice (⭐⭐)", "Thunder (⭐⭐)", "Dragon (⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐)", "Paralysis (⭐⭐)", "Blast (⭐)", "Stun (⭐⭐)"],
     "locations": [{
@@ -790,6 +816,7 @@
     "elements": ["Ice"],
     "ailments": ["Iceblight"],
     "resistances": ["Ice"],
+    "threat-level": "🔥🔥",
     "weakness": ["Thunder (⭐⭐⭐)", "Fire (⭐⭐)", "Water (⭐)", "Dragon (⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Coral Highlands",
@@ -816,6 +843,7 @@
     "elements": ["None"],
     "ailments": ["Bleeding"],
     "resistances": ["Water", "Sleep"],
+    "threat-level": "none",
     "weakness": ["Fire (⭐⭐⭐)", "Dragon (⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐)", "Poison (⭐⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐)"],
     "locations": [{
       "name": "Ancient Forest",
@@ -833,6 +861,7 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight"],
     "resistances": ["Fire"],
+    "threat-level": "🔥🔥🔥",
     "weakness": ["Ice (⭐⭐⭐)", "Dragon (⭐⭐)", "Water (⭐)", "Thunder (⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)", "Poison (⭐)", "Sleep (⭐)", "Paralysis (⭐)"],
     "locations": [{
         "name": "Wildspire Waste",
@@ -859,6 +888,7 @@
     "elements": ["None"],
     "ailments": ["Bleeding"],
     "resistances": ["Water"],
+    "threat-level": "🔥🔥",
     "weakness": ["Thunder (⭐⭐⭐)", "Fire (⭐⭐)", "Ice (⭐)", "Dragon (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
@@ -889,6 +919,7 @@
     "elements": ["Water", "Thunder"],
     "ailments": ["Waterblight", "Thunderblight"],
     "resistances": ["Water", "Thunder"],
+    "threat-level": "🔥🔥🔥",
     "weakness": ["Fire (⭐⭐⭐)", "Dragon (⭐⭐)", "Ice (⭐)", "Poison (⭐⭐⭐)", "Blast (⭐⭐⭐)", "Stun (⭐⭐)", "Sleep (⭐)", "Paralysis (⭐)"],
     "locations": [{
         "name": "Coral Highlands",
@@ -911,6 +942,7 @@
     "elements": ["None"],
     "ailments": ["None"],
     "resistances": ["None"],
+    "threat-level": "🔥🔥🔥",
     "weakness": ["Thunder (⭐⭐⭐)", "Dragon (⭐⭐)", "Fire (⭐)", "Water (⭐)", "Ice (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
       "name": "Elder's Recess",
@@ -928,6 +960,7 @@
     "elements": ["None"],
     "ailments": ["Sleep"],
     "resistances": ["Dragon"],
+    "threat-level": "🔥",
     "weakness": ["Water (⭐⭐⭐)", "Fire (⭐⭐)", "Thunder (⭐)", "Ice (⭐)", "Sleep (⭐)", "Poison (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
@@ -954,6 +987,7 @@
     "elements": ["None"],
     "ailments": ["Bleeding"],
     "resistances": ["Dragon"],
+    "threat-level": "🔥🔥",
     "weakness": ["Ice (⭐⭐⭐)", "Thunder (⭐⭐)", "Water (⭐)", "Fire (⭐)", "Paralysis (⭐⭐⭐)", "Poison (⭐)", "Sleep (⭐⭐)", "Stun (⭐⭐)", "Blast (⭐⭐)"],
     "locations": [{
         "name": "Rotten Vale",
@@ -980,6 +1014,7 @@
     "elements": ["None"],
     "ailments": ["Wind Pressure"],
     "resistances": ["Water"],
+    "threat-level": "🔥",
     "weakness": ["Fire (⭐⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐)", "Dragon (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐⭐)", "Stun (⭐⭐⭐)"],
     "locations": [{
         "name": "Coral Highlands",
@@ -1002,6 +1037,7 @@
     "elements": ["Fire"],
     "ailments": ["Poison"],
     "resistances": ["Fire"],
+    "threat-level": "🔥",
     "weakness": ["Dragon (⭐⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐)", "Water (⭐)", "Stun (⭐⭐⭐)", "Poison (⭐)", "Blast (⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)"],
 
     "locations": [{
@@ -1029,6 +1065,7 @@
     "elements": ["None"],
     "ailments": ["Poison"],
     "resistances": ["Water"],
+    "threat-level": "🔥",
     "weakness": ["Thunder (⭐⭐⭐)", "Fire (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐)", "Sleep (⭐⭐⭐)", "Paralysis (⭐⭐⭐)", "Poison (⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
@@ -1055,6 +1092,7 @@
     "elements": ["None"],
     "ailments": ["Sleep"],
     "resistances": ["None"],
+    "threat-level": "🔥",
     "weakness": ["Dragon (⭐⭐⭐)", "Ice (⭐⭐)", "Fire (⭐)", "Water (⭐)", "Thunder (⭐)", "Blast (⭐⭐⭐)", "Poison (⭐⭐)", "Sleep (⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Rotten Vale",
@@ -1074,6 +1112,7 @@
     "elements": ["None"],
     "ailments": ["Blastblight", "fireblight", "Blastscourge"],
     "resistances": ["Fire"],
+    "threat-level": "🔥🔥🔥",
     "weakness": ["Ice (⭐⭐⭐)", "Water (⭐⭐)", "Thunder (⭐)", "Dragon (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐)", "Stun (⭐⭐)"],
     "locations": [{
       "name": "The Guiding Lands",
@@ -1090,6 +1129,7 @@
     "elements": ["Thunder"],
     "ailments": ["Thunderblight"],
     "resistances": ["Thunder", "Fire", "Dragon"],
+    "threat-level": "🔥🔥",
     "weakness": ["Ice (⭐⭐⭐)", "Water (⭐)", "Blast (⭐⭐)", "Poison (⭐)", "Sleep (⭐)", "Paralysis (⭐)", "Stun (⭐)"],
     "locations": [{
         "name": "Ancient Forest",
@@ -1132,6 +1172,7 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight", "Poison", "Stun"],
     "resistances": ["Fire"],
+    "threat-level": "🔥🔥",
     "weakness": ["Dragon (⭐⭐⭐)", "Thunder (⭐⭐)", "Water (⭐)", "Ice (⭐)", "Poison (⭐)", "Blast (⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
@@ -1158,6 +1199,7 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight", "Poison"],
     "resistances": ["Fire"],
+    "threat-level": "🔥",
     "weakness": ["Dragon (⭐⭐⭐)", "Thunder (⭐⭐)", "Water (⭐)", "Ice (⭐)", "Stun (⭐⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Poison (⭐)", "Blast (⭐)"],
     "locations": [{
         "name": "Ancient Forest",
@@ -1184,6 +1226,7 @@
     "elements": ["None"],
     "ailments": ["Bleeding"],
     "resistances": ["None"],
+    "threat-level": "🔥🔥🔥",
     "weakness": ["Dragon (⭐⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐)", "Water (⭐)", "Fire (⭐)", "Blast (⭐⭐⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐)"],
     "locations": [{
         "name": "Ancient Forest",
@@ -1227,6 +1270,7 @@
     "elements": ["Fire", "Dragon"],
     "ailments": ["Fireblight", "Dragonblight"],
     "resistances": ["None"],
+    "threat-level": "none",
     "weakness": ["Dragon-(Elderseal) (⭐⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐⭐)", "Water (⭐⭐)", "Fire (⭐⭐)", "Dragon (⭐⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
       "name": "Secluded Valley",
@@ -1245,6 +1289,7 @@
     "elements": ["Dragon"],
     "ailments": ["Dragonblight", "Defense Down", "Fireblight on lava terrain", "Iceblight on icy terrain", "Waterblight on water terrain", "Effluvial Buildup in Rotten Vale"],
     "resistances": ["Ice"],
+    "threat-level": "🔥🔥",
     "weakness": ["Thunder (⭐⭐⭐)", "Dragon (⭐⭐⭐)", "Fire (⭐⭐)", "Water (⭐⭐)", "Ice (⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐⭐⭐)", "Paralysis (⭐⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
@@ -1293,6 +1338,7 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight", "Poison"],
     "resistances": ["Thunder", "Fire"],
+    "threat-level": "🔥🔥",
     "weakness": ["Water (⭐⭐⭐)", "Dragon (⭐⭐)", "Ice (⭐)", "Blast (⭐⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)", "Poison (⭐)", "Sleep (⭐)"],
     "locations": [{
         "name": "Ancient Forest",
@@ -1315,6 +1361,7 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight", "Blastblight"],
     "resistances": ["Fire"],
+    "threat-level": "🔥🔥",
     "weakness": ["Thunder (⭐⭐)", "Dragon (⭐)", "Ice (⭐⭐⭐)", "Water (⭐)", "Sleep (⭐⭐⭐)", "Poison (⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)", "Blast (⭐)"],
     "locations": [{
         "name": "Elder's Recess",
@@ -1337,6 +1384,7 @@
     "elements": ["None"],
     "ailments": ["None"],
     "resistances": ["Sleep", "Thunder"],
+    "threat-level": "none",
     "weakness": ["Ice (⭐⭐⭐)", "Water (⭐⭐)", "Fire (⭐)", "Dragon (⭐)", "Blast (⭐⭐⭐)", "Blast-(Armored) (⭐⭐)", "Poison (⭐⭐)", "Paralysis (⭐)", "Stun (⭐)"],
     "locations": [{
       "name": "The Guiding Lands",
@@ -1354,6 +1402,7 @@
     "elements": ["Ice"],
     "ailments": ["Iceblight"],
     "resistances": ["Ice"],
+    "threat-level": "🔥🔥",
     "weakness": ["Fire (⭐⭐⭐)", "Thunder (⭐⭐)", "Water (⭐)", "Dragon (⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Hoarfrost Reach",
@@ -1376,6 +1425,7 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight", "Poison"],
     "resistances": ["Fire", "Dragon"],
+    "threat-level": "🔥🔥",
     "weakness": ["Water (⭐⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)", "Poison (⭐)", "Blast (⭐)"],
     "locations": [{
         "name": "Elder's Recess",
@@ -1398,6 +1448,7 @@
     "elements": ["Dragon"],
     "ailments": ["Dragonblight"],
     "resistances": ["Ice", "Fire", "Water", "Dragon"],
+    "threat-level": "🔥🔥",
     "weakness": ["Thunder (⭐)", "Fire-(Charged) (⭐)", "Water-(Charged) (⭐⭐)", "Thunder-(Charged) (⭐⭐⭐)", "Ice-(Charged) (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Elder's Recess",
@@ -1424,6 +1475,7 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight", "Blastblight"],
     "resistances": ["Fire"],
+    "threat-level": "🔥🔥🔥",
     "weakness": ["Water (⭐⭐⭐)", "Ice (⭐⭐⭐)", "Thunder (⭐)", "Ice (⭐)", "Poison (⭐⭐)", "Stun (⭐⭐)", "Sleep (⭐)", "Paralysis (⭐)", "Blast (⭐)"],
     "locations": [{
         "name": "Wildspire Waste",
@@ -1450,6 +1502,7 @@
     "elements": ["None"],
     "ailments": ["Iceblight on icy terrain", "Waterblight on water terrain", "Effluvial Buildup in Rotten Vale", "Fireblight in Elder's Recess"],
     "resistances": ["Fire"],
+    "threat-level": "🔥🔥",
     "weakness": ["Thunder (⭐⭐⭐)", "Dragon (⭐⭐)", "Water (⭐)", "Ice (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
@@ -1488,6 +1541,7 @@
     "elements": ["Thunder"],
     "ailments": ["Thunderblight"],
     "resistances": ["Thunder"],
+    "threat-level": "🔥",
     "weakness": ["Water (⭐⭐⭐)", "Fire (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Ancient Forest",
@@ -1510,6 +1564,7 @@
     "elements": ["Thunder"],
     "ailments": ["Stun"],
     "resistances": ["None"],
+    "threat-level": "none",
     "weakness": ["Thunder (⭐⭐⭐)", "Ice (⭐⭐⭐)", "Fire (⭐⭐)", "Water (⭐⭐)", "Dragon (⭐⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
         "name": "Coral Highlands",
@@ -1532,6 +1587,7 @@
     "elements": ["Fire"],
     "ailments": ["Sleep", "Fireblight"],
     "resistances": ["Fire"],
+    "threat-level": "🔥🔥",
     "weakness": ["Water (⭐⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐⭐)", "Thunder (⭐)", "Poison (⭐⭐⭐)", "Stun (⭐⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Sleep (⭐)"],
     "locations": [{
         "name": "Elder's Recess",
@@ -1554,6 +1610,7 @@
     "elements": ["None"],
     "ailments": ["Effluvia"],
     "resistances": ["Water"],
+    "threat-level": "🔥🔥🔥",
     "weakness": ["Fire (⭐⭐⭐)", "Dragon (⭐⭐)", "Ice (⭐⭐)", "Thunder (⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)", "Poison (⭐)", "Sleep (⭐)", "Paralysis (⭐)"],
     "locations": [{
       "name": "Rotten Vale",
@@ -1572,6 +1629,7 @@
     "ailments": ["Iceblight"],
     "weakness": ["Fire (⭐⭐⭐)", "Thunder (⭐⭐)", "Dragon (⭐⭐)", "Water (⭐)", "Blast (⭐⭐⭐)", "Poison (⭐⭐)", "Sleep (⭐)", "Paralysis (⭐)", "Stun (⭐)"],
     "resistances": ["Ice"],
+    "threat-level": "🔥🔥🔥",
     "locations": [{
         "name": "Ancient Forest",
         "color": "0x1E9E47"
@@ -1614,6 +1672,7 @@
     "ailments": ["Poison", "Noxious Poison", "Paralysis"],
     "weakness": ["Thunder (⭐⭐⭐)", "Ice (⭐⭐)", "Fire (⭐)", "Dragon (⭐)", "Sleep (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)", "Poison (⭐)", "Paralysis (⭐)"],
     "resistances": ["Water"],
+    "threat-level": "🔥🔥",
     "locations": [{
         "name": "Hoarfrost Reach",
         "color": "0x8ABEEB"
@@ -1635,6 +1694,7 @@
     "elements": ["Dragon", "Fire"],
     "ailments": ["Fireblight", "Dragonblight"],
     "resistances": ["Sleep"],
+    "threat-level": "none",
     "weakness": ["Poison (⭐⭐⭐)", "Fire (⭐⭐)", "Water (⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐⭐)", "Blast (⭐⭐)", "Paralysis (⭐)", "Stun (⭐)"],
     "locations": [{
       "name": "Elder's Recess",
@@ -1652,6 +1712,7 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight", "Poison"],
     "resistances": ["Thunder", "Fire"],
+    "threat-level": "none",
     "weakness": ["Water (⭐⭐⭐)", "Dragon (⭐⭐)", "Ice (⭐)", "Blast (⭐⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)", "Poison (⭐)", "Sleep (⭐)"],
     "locations": [{
         "name": "Ancient Forest",
@@ -1674,6 +1735,7 @@
     "elements": ["Thunder"],
     "ailments": ["Thunderblight"],
     "resistances": ["Thunder"],
+    "threat-level": "🔥🔥",
     "weakness": ["Ice (⭐⭐⭐)", "Water (⭐⭐)", "Fire (⭐)", "Dragon (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)", "Paralysis (⭐)"],
     "locations": [{
         "name": "Ancient Forest",
@@ -1700,6 +1762,7 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight"],
     "resistances": ["Fire", "Poison", "Sleep", "Paralysis", "Blast", "Stun"],
+    "threat-level": "none",
     "weakness": ["Dragon (⭐⭐⭐)", "Water (⭐⭐⭐)", "Ice (⭐⭐)", "Thunder (⭐)"],
     "locations": [{
         "name": "The Great Ravine",
@@ -1719,6 +1782,7 @@
     "elements": ["Ice"],
     "ailments": ["Iceblight"],
     "resistances": ["Water", "Ice"],
+    "threat-level": "🔥🔥",
     "weakness": ["Fire (⭐⭐⭐)", "Thunder (⭐⭐)", "Dragon (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
       "name": "Hoarfrost Reach",
@@ -1733,6 +1797,7 @@
     "elements": ["Fire", "Ice", "Thunder", "Water", "Dragon"],
     "ailments": ["Fireblight", "Iceblight", "Waterblight", "Thunderblight", "Dragonblight"],
     "resistances": ["Fire (Fire Active)", "Ice (Ice Active)"],
+    "threat-level": "none",
     "weakness": ["Dragon-(FireActive) (⭐)", "Ice-(FireActive) (⭐⭐⭐)", "Water-(FireActive) (⭐⭐)", "Thunder-(FireActive) (⭐)", "Dragon-(IceActive) (⭐)", "Fire-(IceActive) (⭐⭐⭐)", "Water-(IceActive) (⭐)", "Thunder-(IceActive) (⭐⭐)", "Dragon-(DragonActive) (⭐⭐)", "Ice-(DragonActive) (⭐)", "Water-(DragonActive) (⭐)", "Thunder-(DragonActive) (⭐)", "Fire-(DragonActive) (⭐)", "Poison (⭐)", "Sleep (⭐)", "Paralysis (⭐)", "Blast (⭐)", "Stun (⭐)"],
     "locations": [{
       "name": "Secluded Valley",

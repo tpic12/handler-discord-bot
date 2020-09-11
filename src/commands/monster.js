@@ -49,8 +49,19 @@ module.exports = {
         weakness2.push(item[0]);
       }
     });
-    // console.log("3 star weaknesses: ", weakness3);
-    // console.log("2 star weaknesses: ", weakness2);
+    // console.log("monster value: ", monsterValue);
+    let title;
+    if (monsterValue[0]["threat-level"] !== "none") {
+      title =
+        "**" +
+        monsterValue[0].name +
+        "**" +
+        "  " +
+        monsterValue[0]["threat-level"];
+    } else {
+      title = "**" + monsterValue[0].name + "**";
+    }
+
     if (!weakness3.length) {
       weakness3.push("None");
     }
@@ -62,7 +73,8 @@ module.exports = {
       let iconURL = MonsterIcon[searchName].icon;
 
       embed
-        .setTitle("**" + monster.name + "**")
+        // .setTitle("**" + monster.name + "**")
+        .setTitle(title)
         .addField("**Species**", monster.species)
         .addField("**Weaknesses** ⭐⭐⭐", weakness3.join(", "))
         .addField("**Weaknesses** ⭐⭐", weakness2.join(", "))
