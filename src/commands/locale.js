@@ -12,8 +12,9 @@ module.exports = {
     let monsterFields = [];
     let counter = 0;
     let isInArea = (locale) => {
-      if (locale.name.toLowerCase().includes(area.toLowerCase())) {
+      if (locale.name.toLowerCase().includes(`${area.toLowerCase()} region`)) {
         areaTitle = locale.name;
+        // console.log(areaTitle);
         color = locale.color;
         if (locale.icon) {
           iconSrc = locale.icon;
@@ -22,19 +23,45 @@ module.exports = {
         return true;
       }
     };
+    let isTempered = (locale) => {
+      // console.log(locale);
+      if (
+        locale.tempered &&
+        locale.name.toLowerCase().includes(`${area.toLowerCase()} region`)
+      ) {
+        // console.log("YAY!");
+        return true;
+      }
+      return false;
+    };
     MonsterList.forEach((monster) => {
-      if (monster.locations.some(isInArea)) {
-        let species = monster.species;
-        if (!monsters[species]) {
-          monsters[species] = [monster.name];
+      if (
+        monster.locations.some(isInArea) &&
+        monster["threat-level"] !== "none"
+      ) {
+        // let species = monster.species;
+        let threat = monster["threat-level"];
+        // console.log("tempered check: ", monster.locations.some(isTempered));
+        if (monster.locations.some(isTempered)) {
+          if (!monsters[threat]) {
+            monsters[threat] = [`**${monster.name}**`];
+          } else {
+            monsters[threat].push(`**${monster.name}**`);
+          }
         } else {
-          monsters[species].push(monster.name);
+          if (!monsters[threat]) {
+            monsters[threat] = [monster.name];
+          } else {
+            monsters[threat].push(monster.name);
+          }
         }
       }
     });
+    // console.log(monsters);
     function sortObj(obj) {
       return Object.keys(obj)
         .sort()
+        .reverse()
         .reduce(function (result, key) {
           result[key] = obj[key];
           return result;
@@ -42,7 +69,7 @@ module.exports = {
     }
     let sortedMonsters = sortObj(monsters);
     Object.keys(sortedMonsters).forEach((key) => {
-      let name = key.split("-").join(" ");
+      let name = `Threat Level  ${key}`;
       monsterFields.push({
         name: "**" + name + ": **",
         value: sortedMonsters[key].join(", "),
@@ -62,7 +89,8 @@ module.exports = {
         .addFields(monsterFields)
         .attachFiles(attachment)
         .setThumbnail(thumbnail)
-        .setColor(color);
+        .setColor(color)
+        .setFooter("*Bold names are tempered only in that area");
       if (counter <= 7) {
         message.channel.send(embed);
       }

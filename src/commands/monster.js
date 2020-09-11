@@ -68,6 +68,10 @@ module.exports = {
     if (!weakness2.length) {
       weakness2.push("None");
     }
+    let locales = monsterValue[0].locations
+      .map((locale) => locale.name)
+      .join(", ");
+    // console.log(locales);
     monsterValue.map((monster) => {
       let searchName = monster.name.toLowerCase().split(" ").join("-");
       let iconURL = MonsterIcon[searchName].icon;
@@ -75,7 +79,8 @@ module.exports = {
       embed
         // .setTitle("**" + monster.name + "**")
         .setTitle(title)
-        .addField("**Species**", monster.species)
+        .addField("**Species**", monster.species, true)
+        .addField("**Locale**", locales, true)
         .addField("**Weaknesses** ⭐⭐⭐", weakness3.join(", "))
         .addField("**Weaknesses** ⭐⭐", weakness2.join(", "))
         .addField("**Resistances**", monster.resistances.join(", "))

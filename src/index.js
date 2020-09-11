@@ -25,27 +25,28 @@ bot.on("ready", () => {
 });
 
 bot.on("message", async (message) => {
-  let args = message.content.substring(PREFIX.length).split(" ");
+  // let args = message.content.substring(PREFIX.length).split(" ");
+  let args = message.content.split(" ");
   let embed = new Discord.MessageEmbed();
 
   switch (args[0]) {
-    case "time":
+    case `*time`:
       bot.commands.get("time").execute(message, args);
       break;
-    case "hunt":
+    case `*hunt`:
       if (!args[1]) return message.reply("Please specify monster to hunt");
       bot.commands.get("hunt").execute(message, embed, args);
       break;
-    case "monster":
+    case `*monster`:
       let name = args.slice(1).join(" ");
       if (!args[1]) return message.reply("Please specify monster to search");
 
       bot.commands.get("monster").execute(message, name, embed, args);
       break;
-    case "help":
+    case `*help`:
       bot.commands.get("help").execute(message, embed, args);
       break;
-    case "locale":
+    case `*locale`:
       if (!args[1] || args[1].toLowerCase() == "the" || args[1].length < 4)
         return message.reply("Please specify a locale to search!");
       let area = args.slice(1).join(" ");

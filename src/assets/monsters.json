@@ -11,14 +11,10 @@
     "threat-level": "🔥🔥",
     "weakness": ["Fire (⭐⭐⭐)", "Dragon (⭐⭐)", "Dragon-(Crystalized) (⭐)", "Thunder (⭐⭐)", "Water (⭐)", "Ice (⭐)", "Blast (⭐⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
-        "name": "Rotten Vale",
-        "color": "0xBF5726"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
-      }
-    ]
+      "name": "Rotted Region",
+      "color": "0xBF5726",
+      "tempered": true
+    }]
   },
 
   {
@@ -53,16 +49,12 @@
     "weakness": ["Water (⭐⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐)", "Poison (⭐⭐)", "Paralysis (⭐⭐)", "Sleep (⭐⭐)", "Blast (⭐)", "Stun (⭐⭐)"],
 
     "locations": [{
-        "name": "Ancient Forest",
+        "name": "Forest Region",
         "color": "0x1E9E47"
       },
       {
-        "name": "Wildspire Waste",
+        "name": "Wildspire Region",
         "color": "0xF2A22C"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
     ]
   },
@@ -80,16 +72,12 @@
     "threat-level": "🔥🔥",
     "weakness": ["Dragon (⭐⭐⭐)", "Ice (⭐⭐)", "Water (⭐)", "Thunder (⭐)", "Poison (⭐)", "Blast (⭐)", "Paralysis (⭐⭐)", "Sleep (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
-        "name": "Ancient Forest",
+        "name": "Forest Region",
         "color": "0x1E9E47"
       },
       {
-        "name": "Elder's Recess",
+        "name": "Volcanic Region",
         "color": "0xED512F"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
     ]
   },
@@ -107,32 +95,28 @@
     "threat-level": "🔥",
     "weakness": ["Dragon (⭐⭐⭐)", "Fire (⭐⭐)", "Thunder (⭐)", "Blast (⭐⭐⭐)", "Stun (⭐⭐⭐)", "Poison (⭐⭐)", "Paralysis (⭐⭐)", "Sleep (⭐⭐)"],
     "locations": [{
-        "name": "Ancient Forest",
+        "name": "Forest Region",
         "color": "0x1E9E47"
       },
       {
-        "name": "Wildspire Waste",
+        "name": "Wildspire Region",
         "color": "0xF2A22C"
       },
       {
-        "name": "Rotten Vale",
+        "name": "Rotted Region",
         "color": "0xBF5726"
       },
       {
-        "name": "Coral Highlands",
+        "name": "Coral Region",
         "color": "0x86E0D4"
       },
       {
-        "name": "Elder's Recess",
+        "name": "Volcanic Region",
         "color": "0xED512F"
       },
       {
-        "name": "Hoarfrost Reach",
+        "name": "Tundra Region",
         "color": "0x8ABEEB"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
     ]
   },
@@ -150,14 +134,10 @@
     "threat-level": "🔥🔥",
     "weakness": ["Fire (⭐⭐⭐)", "Thunder (⭐⭐)", "Dragon (⭐)", "Paralysis (⭐⭐)", "Sleep (⭐⭐)", "Poison (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
-        "name": "Hoarfrost Reach",
-        "color": "0x8ABEEB"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
-      }
-    ]
+      "name": "Tundra Region",
+      "color": "0x8ABEEB",
+      "tempered": true
+    }]
   },
 
   {
@@ -175,12 +155,10 @@
     "locations": [{
         "name": "Wildspire Waste",
         "color": "0xF2A22C",
-        "icon": "localeWaste.png"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
+        "icon": "localeWaste.png",
+        "tempered": true
       }
+
     ]
   },
 
@@ -268,13 +246,11 @@
     "threat-level": "🔥🔥",
     "weakness": ["Ice (⭐⭐⭐)", "Water (⭐⭐)", "Thunder (⭐)", "Paralysis (⭐⭐⭐)", "Stun (⭐)", "Paralysis (⭐⭐)", "Sleep (⭐⭐)", "Blast (⭐⭐)"],
     "locations": [{
-        "name": "Wildspire Waste",
-        "color": "0xF2A22C"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
+        "name": "Wildspire Region",
+        "color": "0xF2A22C",
+        "tempered": true
       }
+
     ]
   },
 
@@ -291,17 +267,11 @@
     "threat-level": "🔥🔥🔥",
     "weakness": ["Fire (⭐⭐)", "Dragon (⭐⭐)", "Ice (⭐)", "Thunder (⭐)", "Blast (⭐⭐)", "Poison (⭐)", "Paralysis (⭐)", "Sleep (⭐)", "Stun (⭐)"],
     "locations": [{
-        "name": "Ancient Forest",
-        "color": "0x1E9E47"
-      },
-      {
-        "name": "Rotten Vale",
-        "color": "0xBF5726"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
+        "name": "Rotted Region",
+        "color": "0xBF5726",
+        "tempered": true
       }
+
     ]
   },
 
@@ -318,13 +288,11 @@
     "threat-level": "🔥🔥",
     "weakness": ["Ice (⭐⭐⭐)", "Water (⭐⭐)", "Thunder (⭐)", "Dragon (⭐)", "Blast (⭐)", "Poison (⭐⭐)", "Paralysis (⭐⭐)", "Sleep (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
-        "name": "Elder's Recess",
-        "color": "0xED512F"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
+        "name": "Volcanic Region",
+        "color": "0xED512F",
+        "tempered": true
       }
+
     ]
   },
 
@@ -341,13 +309,11 @@
     "threat-level": "🔥🔥",
     "weakness": ["Water (⭐⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐)", "Dragon (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
-        "name": "Elder's Recess",
-        "color": "0xED512F"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
+        "name": "Rotted Region",
+        "color": "0xBF5726",
+        "tempered": true
       }
+
     ]
   },
 
@@ -364,13 +330,11 @@
     "threat-level": "🔥",
     "weakness": ["Ice (⭐⭐⭐)", "Thunder (⭐⭐)", "Fire (⭐)", "Dragon (⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
-        "name": "Coral Highlands",
-        "color": "0x86E0D4"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
+        "name": "Coral Region",
+        "color": "0x86E0D4",
+        "tempered": true
       }
+
     ]
   },
 
@@ -422,13 +386,11 @@
     "threat-level": "🔥🔥",
     "weakness": ["Ice (⭐⭐⭐)", "Dragon (⭐⭐)", "Water (⭐⭐)", "Thunder (⭐)", "Paralysis (⭐⭐⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐)"],
     "locations": [{
-        "name": "Wildspire Waste",
-        "color": "0xF2A22C"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
+        "name": "Wildspire Region",
+        "color": "0xF2A22C",
+        "tempered": true
       }
+
     ]
   },
 
@@ -445,13 +407,10 @@
     "threat-level": "none",
     "weakness": ["Thunder (⭐⭐⭐)", "Water (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)", "Blast (⭐)"],
     "locations": [{
-        "name": "Elder's Recess",
+        "name": "Volcanic Region",
         "color": "0xED512F"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
+
     ]
   },
 
@@ -468,33 +427,30 @@
     "threat-level": "🔥🔥",
     "weakness": ["Water (⭐⭐⭐)", "Fire (⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐)", "Poison (⭐⭐⭐)", "Paralysis (⭐⭐⭐)", "Sleep (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
-        "name": "Ancient Forest",
+        "name": "Forest Region",
         "color": "0x1E9E47"
       },
       {
-        "name": "Wildspire Waste",
+        "name": "Wildspire Region",
         "color": "0xF2A22C"
       },
       {
-        "name": "Rotten Vale",
+        "name": "Rotted Region",
         "color": "0xBF5726"
       },
       {
-        "name": "Coral Highlands",
+        "name": "Coral Region",
         "color": "0x86E0D4"
       },
       {
-        "name": "Elder's Recess",
+        "name": "Volcanic Region",
         "color": "0xED512F"
       },
       {
-        "name": "Hoarfrost Reach",
+        "name": "Tundra Region",
         "color": "0x8ABEEB"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
+
     ]
   },
 
@@ -511,33 +467,30 @@
     "threat-level": "🔥🔥",
     "weakness": ["Ice (⭐⭐⭐)", "Ice-(Charged) (⭐⭐)", "Water-(Charged) (⭐⭐⭐)", "Water (⭐⭐)", "Fire (⭐⭐)", "Dragon (⭐)", "Blast (⭐)", "Poison (⭐⭐)", "Paralysis (⭐⭐)", "Sleep (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
-        "name": "Ancient Forest",
+        "name": "Forest Region",
         "color": "0x1E9E47"
       },
       {
-        "name": "Wildspire Waste",
+        "name": "Wildspire Region",
         "color": "0xF2A22C"
       },
       {
-        "name": "Rotten Vale",
+        "name": "Rotted Region",
         "color": "0xBF5726"
       },
       {
-        "name": "Coral Highlands",
+        "name": "Coral Region",
         "color": "0x86E0D4"
       },
       {
-        "name": "Elder's Recess",
+        "name": "Volcanic Region",
         "color": "0xED512F"
       },
       {
-        "name": "Hoarfrost Reach",
+        "name": "Tundra Region",
         "color": "0x8ABEEB"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
+
     ]
   },
   {
@@ -569,25 +522,18 @@
     "threat-level": "🔥🔥",
     "weakness": ["Water (⭐⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐⭐)", "Thunder (⭐)", "Poison (⭐⭐)", "Paralysis (⭐⭐)", "Sleep (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
-        "name": "Ancient Forest",
+        "name": "Forest Region",
         "color": "0x1E9E47"
       },
       {
-        "name": "Wildspire Waste",
+        "name": "Wildspire Region",
         "color": "0xF2A22C"
       },
       {
-        "name": "Rotten Vale",
-        "color": "0xBF5726"
-      },
-      {
-        "name": "Elder's Recess",
+        "name": "Volcanic Region",
         "color": "0xED512F"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
+
     ]
   },
 
@@ -601,16 +547,18 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight", "Poison"],
     "resistances": ["Dragon", "Fire"],
-    "threat-level": "🔥🔥",
+    "threat-level": "🔥🔥🔥",
     "weakness": ["Thunder (⭐⭐⭐)", "Water (⭐⭐)", "Ice (⭐)", "Poison (⭐)", "Blast (⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
-        "name": "Elder's Recess",
-        "color": "0xED512F"
+        "name": "Wildspire Region",
+        "color": "0xF2A22C",
+        "tempered": true
       },
       {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
+        "name": "Volcanic Region",
+        "color": "0xED512F"
       }
+
     ]
   },
 
@@ -627,13 +575,10 @@
     "threat-level": "none",
     "weakness": ["Water (⭐⭐⭐)", "Fire (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐)", "Sleep (⭐⭐⭐)", "Paralysis (⭐)", "Poison (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
-        "name": "Rotten Vale",
+        "name": "Rotted Region",
         "color": "0xBF5726"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
+
     ]
   },
 
@@ -650,13 +595,10 @@
     "threat-level": "none",
     "weakness": ["Fire (⭐⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐⭐⭐)", "Paralysis (⭐⭐⭐)", "Blast (⭐⭐⭐)", "Stun (⭐⭐⭐)"],
     "locations": [{
-        "name": "Ancient Forest",
+        "name": "Forest Region",
         "color": "0x1E9E47"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
+
     ]
   },
 
@@ -675,11 +617,8 @@
     "locations": [{
         "name": "Wildspire Waste",
         "color": "0xF2A22C"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
+
     ]
   },
 
@@ -694,17 +633,11 @@
     "threat-level": "🔥🔥🔥",
     "weakness": ["Fire (⭐⭐⭐)", "Water (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐)", "Sleep (⭐⭐)", "Blast (⭐⭐)", "Poison (⭐)", "Stun (⭐)"],
     "locations": [{
-        "name": "Coral Highlands",
-        "color": "0x86E0D4"
-      },
-      {
-        "name": "Hoarfrost Reach",
-        "color": "0x8ABEEB"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
+        "name": "Coral Region",
+        "color": "0x86E0D4",
+        "tempered": true
       }
+
     ]
   },
 
@@ -721,17 +654,10 @@
     "threat-level": "none",
     "weakness": ["Water (⭐⭐⭐)", "Fire (⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
-        "name": "Ancient Forest",
-        "color": "0x1E9E47"
-      },
-      {
-        "name": "Wildspire Waste",
+        "name": "Wildspire Region",
         "color": "0xF2A22C"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
+
     ]
   },
 
@@ -769,17 +695,14 @@
     "threat-level": "🔥🔥🔥",
     "weakness": ["Thunder (⭐⭐⭐)", "Dragon (⭐⭐)", "Fire (⭐)", "Poison (⭐⭐⭐)", "Blast (⭐⭐⭐)", "Stun (⭐⭐)", "Sleep (⭐)", "Paralysis (⭐)"],
     "locations": [{
-        "name": "Ancient Forest",
+        "name": "Forest Region",
         "color": "0x1E9E47"
       },
       {
-        "name": "Elder's Recess",
+        "name": "Volcanic Region",
         "color": "0xED512F"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
+
     ]
   },
 
@@ -796,13 +719,11 @@
     "resistances": ["Fire when not hardened", "Thunder when hardened", "Ice when hardened"],
     "weakness": ["Water-(Hardened) (⭐⭐)", "Fire-(Hardened) (⭐)", "Water (⭐⭐⭐)", "Ice (⭐⭐)", "Thunder (⭐⭐)", "Dragon (⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐)", "Paralysis (⭐⭐)", "Blast (⭐)", "Stun (⭐⭐)"],
     "locations": [{
-        "name": "Elder's Recess",
-        "color": "0xED512F"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
+        "name": "Volcanic Region",
+        "color": "0xED512F",
+        "tempered": true
       }
+
     ]
   },
 
@@ -819,17 +740,14 @@
     "threat-level": "🔥🔥",
     "weakness": ["Thunder (⭐⭐⭐)", "Fire (⭐⭐)", "Water (⭐)", "Dragon (⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
-        "name": "Coral Highlands",
+        "name": "Coral Region",
         "color": "0x86E0D4"
       },
       {
-        "name": "Hoarfrost Reach",
+        "name": "Tundra Region",
         "color": "0x8ABEEB"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
+
     ]
   },
 
@@ -864,17 +782,14 @@
     "threat-level": "🔥🔥🔥",
     "weakness": ["Ice (⭐⭐⭐)", "Dragon (⭐⭐)", "Water (⭐)", "Thunder (⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)", "Poison (⭐)", "Sleep (⭐)", "Paralysis (⭐)"],
     "locations": [{
-        "name": "Wildspire Waste",
+        "name": "Wildspire Region",
         "color": "0xF2A22C"
       },
       {
-        "name": "Elder's Recess",
+        "name": "Volcanic Region",
         "color": "0xED512F"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
+
     ]
   },
 
@@ -891,21 +806,14 @@
     "threat-level": "🔥🔥",
     "weakness": ["Thunder (⭐⭐⭐)", "Fire (⭐⭐)", "Ice (⭐)", "Dragon (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
-        "name": "Ancient Forest",
+        "name": "Forest Region",
         "color": "0x1E9E47"
       },
       {
-        "name": "Coral Highlands",
+        "name": "Coral Region",
         "color": "0x86E0D4"
-      },
-      {
-        "name": "Hoarfrost Reach",
-        "color": "0x8ABEEB"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
+
     ]
   },
 
@@ -922,13 +830,11 @@
     "threat-level": "🔥🔥🔥",
     "weakness": ["Fire (⭐⭐⭐)", "Dragon (⭐⭐)", "Ice (⭐)", "Poison (⭐⭐⭐)", "Blast (⭐⭐⭐)", "Stun (⭐⭐)", "Sleep (⭐)", "Paralysis (⭐)"],
     "locations": [{
-        "name": "Coral Highlands",
-        "color": "0x86E0D4"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
+        "name": "Coral Region",
+        "color": "0x86E0D4",
+        "tempered": true
       }
+
     ]
   },
 
@@ -963,17 +869,14 @@
     "threat-level": "🔥",
     "weakness": ["Water (⭐⭐⭐)", "Fire (⭐⭐)", "Thunder (⭐)", "Ice (⭐)", "Sleep (⭐)", "Poison (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
-        "name": "Ancient Forest",
+        "name": "Forest Region",
         "color": "0x1E9E47"
       },
       {
-        "name": "Wildspire Waste",
+        "name": "Wildspire Region",
         "color": "0xF2A22C"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
+
     ]
   },
 
@@ -990,17 +893,14 @@
     "threat-level": "🔥🔥",
     "weakness": ["Ice (⭐⭐⭐)", "Thunder (⭐⭐)", "Water (⭐)", "Fire (⭐)", "Paralysis (⭐⭐⭐)", "Poison (⭐)", "Sleep (⭐⭐)", "Stun (⭐⭐)", "Blast (⭐⭐)"],
     "locations": [{
-        "name": "Rotten Vale",
+        "name": "Rotted Region",
         "color": "0xBF5726"
       },
       {
-        "name": "Coral Highlands",
+        "name": "Coral Region",
         "color": "0x86E0D4"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
+
     ]
   },
 
@@ -1017,13 +917,11 @@
     "threat-level": "🔥",
     "weakness": ["Fire (⭐⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐)", "Dragon (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐⭐)", "Stun (⭐⭐⭐)"],
     "locations": [{
-        "name": "Coral Highlands",
-        "color": "0x86E0D4"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
+        "name": "Coral Region",
+        "color": "0x86E0D4",
+        "tempered": true
       }
+
     ]
   },
 
@@ -1041,17 +939,14 @@
     "weakness": ["Dragon (⭐⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐)", "Water (⭐)", "Stun (⭐⭐⭐)", "Poison (⭐)", "Blast (⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)"],
 
     "locations": [{
-        "name": "Wildspire Waste",
+        "name": "Wildspire Region",
         "color": "0xF2A22C"
       },
       {
-        "name": "Coral Highlands",
+        "name": "Coral Region",
         "color": "0x86E0D4"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
+
     ]
   },
 
@@ -1068,17 +963,14 @@
     "threat-level": "🔥",
     "weakness": ["Thunder (⭐⭐⭐)", "Fire (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐)", "Sleep (⭐⭐⭐)", "Paralysis (⭐⭐⭐)", "Poison (⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
-        "name": "Ancient Forest",
+        "name": "Forest Region",
         "color": "0x1E9E47"
       },
       {
-        "name": "Wildspire Waste",
+        "name": "Wildspire Region",
         "color": "0xF2A22C"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
+
     ]
   },
 
@@ -1095,13 +987,11 @@
     "threat-level": "🔥",
     "weakness": ["Dragon (⭐⭐⭐)", "Ice (⭐⭐)", "Fire (⭐)", "Water (⭐)", "Thunder (⭐)", "Blast (⭐⭐⭐)", "Poison (⭐⭐)", "Sleep (⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
-        "name": "Rotten Vale",
-        "color": "0xBF5726"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
+        "name": "Rotted Region",
+        "color": "0xBF5726",
+        "tempered": true
       }
+
     ]
   },
   {
@@ -1129,36 +1019,34 @@
     "elements": ["Thunder"],
     "ailments": ["Thunderblight"],
     "resistances": ["Thunder", "Fire", "Dragon"],
-    "threat-level": "🔥🔥",
+    "threat-level": "🔥🔥🔥",
     "weakness": ["Ice (⭐⭐⭐)", "Water (⭐)", "Blast (⭐⭐)", "Poison (⭐)", "Sleep (⭐)", "Paralysis (⭐)", "Stun (⭐)"],
     "locations": [{
-        "name": "Ancient Forest",
+        "name": "Forest Region",
         "color": "0x1E9E47"
       },
       {
-        "name": "Wildspire Waste",
+        "name": "Wildspire Region",
         "color": "0xF2A22C"
       },
       {
-        "name": "Rotten Vale",
+        "name": "Rotted Region",
         "color": "0xBF5726"
       },
       {
-        "name": "Coral Highlands",
+        "name": "Coral Region",
         "color": "0x86E0D4"
       },
       {
-        "name": "Elder's Recess",
-        "color": "0xED512F"
+        "name": "Volcanic Region",
+        "color": "0xED512F",
+        "tempered": true
       },
       {
-        "name": "Hoarfrost Reach",
+        "name": "Tundra Region",
         "color": "0x8ABEEB"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
+
     ]
   },
 
@@ -1175,17 +1063,14 @@
     "threat-level": "🔥🔥",
     "weakness": ["Dragon (⭐⭐⭐)", "Thunder (⭐⭐)", "Water (⭐)", "Ice (⭐)", "Poison (⭐)", "Blast (⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
-        "name": "Ancient Forest",
+        "name": "Forest Region",
         "color": "0x1E9E47"
       },
       {
-        "name": "Elder's Recess",
+        "name": "Volcanic Region",
         "color": "0xED512F"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
+
     ]
   },
 
@@ -1202,17 +1087,11 @@
     "threat-level": "🔥",
     "weakness": ["Dragon (⭐⭐⭐)", "Thunder (⭐⭐)", "Water (⭐)", "Ice (⭐)", "Stun (⭐⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Poison (⭐)", "Blast (⭐)"],
     "locations": [{
-        "name": "Ancient Forest",
-        "color": "0x1E9E47"
-      },
-      {
-        "name": "Wildspire Waste",
-        "color": "0xF2A22C"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
+        "name": "Forest Region",
+        "color": "0x1E9E47",
+        "tempered": true
       }
+
     ]
   },
 
@@ -1229,33 +1108,28 @@
     "threat-level": "🔥🔥🔥",
     "weakness": ["Dragon (⭐⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐)", "Water (⭐)", "Fire (⭐)", "Blast (⭐⭐⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐)"],
     "locations": [{
-        "name": "Ancient Forest",
+        "name": "Forest Region",
         "color": "0x1E9E47"
       },
       {
-        "name": "Wildspire Waste",
+        "name": "Wildspire Region",
         "color": "0xF2A22C"
       },
       {
-        "name": "Rotten Vale",
+        "name": "Rotted Region",
         "color": "0xBF5726"
       },
       {
-        "name": "Coral Highlands",
+        "name": "Coral Region",
         "color": "0x86E0D4"
       },
       {
-        "name": "Elder's Recess",
+        "name": "Volcanic Region",
         "color": "0xED512F"
       },
       {
-        "name": "Hoarfrost Reach",
+        "name": "Tundra Region",
         "color": "0x8ABEEB"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF",
-        "icon": "mapIcon.png"
       }
     ]
   },
@@ -1289,42 +1163,39 @@
     "elements": ["Dragon"],
     "ailments": ["Dragonblight", "Defense Down", "Fireblight on lava terrain", "Iceblight on icy terrain", "Waterblight on water terrain", "Effluvial Buildup in Rotten Vale"],
     "resistances": ["Ice"],
-    "threat-level": "🔥🔥",
+    "threat-level": "🔥🔥🔥",
     "weakness": ["Thunder (⭐⭐⭐)", "Dragon (⭐⭐⭐)", "Fire (⭐⭐)", "Water (⭐⭐)", "Ice (⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐⭐⭐)", "Paralysis (⭐⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
-        "name": "Ancient Forest",
+        "name": "Forest Region",
         "color": "0x1E9E47",
         "icon": "localeForest.png"
       },
       {
-        "name": "Wildspire Waste",
+        "name": "Wildspire Region",
         "color": "0xF2A22C",
         "icon": "localeWaste.png"
       },
       {
-        "name": "Rotten Vale",
+        "name": "Rotted Region",
         "color": "0xBF5726",
         "icon": "localeRotten.png"
       },
       {
-        "name": "Coral Highlands",
+        "name": "Coral Region",
         "color": "0x86E0D4",
         "icon": "localeCoral.png"
       },
       {
-        "name": "Elder's Recess",
+        "name": "Volcanic Region",
         "color": "0xED512F",
         "icon": "localeElder.png"
       },
       {
-        "name": "Hoarfrost Reach",
+        "name": "Tundra Region",
         "color": "0x8ABEEB",
         "icon": "localeFrost.png"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
+
     ]
   },
 
@@ -1341,13 +1212,11 @@
     "threat-level": "🔥🔥",
     "weakness": ["Water (⭐⭐⭐)", "Dragon (⭐⭐)", "Ice (⭐)", "Blast (⭐⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)", "Poison (⭐)", "Sleep (⭐)"],
     "locations": [{
-        "name": "Ancient Forest",
-        "color": "0x1E9E47"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
+        "name": "Forest Region",
+        "color": "0x1E9E47",
+        "tempered": true
       }
+
     ]
   },
 
@@ -1361,16 +1230,14 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight", "Blastblight"],
     "resistances": ["Fire"],
-    "threat-level": "🔥🔥",
+    "threat-level": "🔥🔥🔥",
     "weakness": ["Thunder (⭐⭐)", "Dragon (⭐)", "Ice (⭐⭐⭐)", "Water (⭐)", "Sleep (⭐⭐⭐)", "Poison (⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)", "Blast (⭐)"],
     "locations": [{
-        "name": "Elder's Recess",
-        "color": "0xED512F"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
+        "name": "Volcanic Region",
+        "color": "0xED512F",
+        "tempered": true
       }
+
     ]
   },
 
@@ -1405,13 +1272,11 @@
     "threat-level": "🔥🔥",
     "weakness": ["Fire (⭐⭐⭐)", "Thunder (⭐⭐)", "Water (⭐)", "Dragon (⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
-        "name": "Hoarfrost Reach",
-        "color": "0x8ABEEB"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
+        "name": "Tundra Region",
+        "color": "0x8ABEEB",
+        "tempered": true
       }
+
     ]
   },
 
@@ -1425,16 +1290,18 @@
     "elements": ["Fire"],
     "ailments": ["Fireblight", "Poison"],
     "resistances": ["Fire", "Dragon"],
-    "threat-level": "🔥🔥",
+    "threat-level": "🔥🔥🔥",
     "weakness": ["Water (⭐⭐⭐)", "Thunder (⭐⭐)", "Ice (⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)", "Poison (⭐)", "Blast (⭐)"],
     "locations": [{
-        "name": "Elder's Recess",
+        "name": "Volcanic Region",
         "color": "0xED512F"
       },
       {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
+        "name": "Coral Region",
+        "color": "0x86E0D4",
+        "tempered": true
       }
+
     ]
   },
 
@@ -1448,21 +1315,13 @@
     "elements": ["Dragon"],
     "ailments": ["Dragonblight"],
     "resistances": ["Ice", "Fire", "Water", "Dragon"],
-    "threat-level": "🔥🔥",
+    "threat-level": "🔥🔥🔥",
     "weakness": ["Thunder (⭐)", "Fire-(Charged) (⭐)", "Water-(Charged) (⭐⭐)", "Thunder-(Charged) (⭐⭐⭐)", "Ice-(Charged) (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
-        "name": "Elder's Recess",
-        "color": "0xED512F"
-      },
-      {
-        "name": "Hoarfrost Reach",
-        "color": "0x8ABEEB"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
-      }
-    ]
+      "name": "Tundra Region",
+      "color": "0x8ABEEB",
+      "tempered": true
+    }]
   },
 
   {
@@ -1478,17 +1337,14 @@
     "threat-level": "🔥🔥🔥",
     "weakness": ["Water (⭐⭐⭐)", "Ice (⭐⭐⭐)", "Thunder (⭐)", "Ice (⭐)", "Poison (⭐⭐)", "Stun (⭐⭐)", "Sleep (⭐)", "Paralysis (⭐)", "Blast (⭐)"],
     "locations": [{
-        "name": "Wildspire Waste",
+        "name": "Wildspire Region",
         "color": "0xF2A22C"
       },
       {
-        "name": "Elder's Recess",
+        "name": "Volcanic Region",
         "color": "0xED512F"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
+
     ]
   },
 
@@ -1505,29 +1361,26 @@
     "threat-level": "🔥🔥",
     "weakness": ["Thunder (⭐⭐⭐)", "Dragon (⭐⭐)", "Water (⭐)", "Ice (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
-        "name": "Ancient Forest",
+        "name": "Forest Region",
         "color": "0x1E9E47"
       },
       {
-        "name": "Wildspire Waste",
+        "name": "Wildspire Region",
         "color": "0xF2A22C"
       },
       {
-        "name": "Rotten Vale",
+        "name": "Rotted Region",
         "color": "0xBF5726"
       },
       {
-        "name": "Elder's Recess",
+        "name": "Volcanic Region",
         "color": "0xED512F"
       },
       {
-        "name": "Hoarfrost Reach",
+        "name": "Tundra Region",
         "color": "0x8ABEEB"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
+
     ]
   },
 
@@ -1544,13 +1397,11 @@
     "threat-level": "🔥",
     "weakness": ["Water (⭐⭐⭐)", "Fire (⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐)", "Poison (⭐⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
-        "name": "Ancient Forest",
-        "color": "0x1E9E47"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
+        "name": "Forest Region",
+        "color": "0x1E9E47",
+        "tempered": true
       }
+
     ]
   },
 
@@ -1567,13 +1418,10 @@
     "threat-level": "none",
     "weakness": ["Thunder (⭐⭐⭐)", "Ice (⭐⭐⭐)", "Fire (⭐⭐)", "Water (⭐⭐)", "Dragon (⭐⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)"],
     "locations": [{
-        "name": "Coral Highlands",
+        "name": "Coral Region",
         "color": "0x86E0D4"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
+
     ]
   },
 
@@ -1590,13 +1438,11 @@
     "threat-level": "🔥🔥",
     "weakness": ["Water (⭐⭐⭐)", "Ice (⭐⭐)", "Dragon (⭐⭐)", "Thunder (⭐)", "Poison (⭐⭐⭐)", "Stun (⭐⭐⭐)", "Paralysis (⭐⭐)", "Blast (⭐⭐)", "Sleep (⭐)"],
     "locations": [{
-        "name": "Elder's Recess",
-        "color": "0xED512F"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
+        "name": "Volcanic Region",
+        "color": "0xED512F",
+        "tempered": true
       }
+
     ]
   },
 
@@ -1631,33 +1477,26 @@
     "resistances": ["Ice"],
     "threat-level": "🔥🔥🔥",
     "locations": [{
-        "name": "Ancient Forest",
+        "name": "Forest Region",
         "color": "0x1E9E47"
       },
       {
-        "name": "Wildspire Waste",
+        "name": "Wildspire Region",
         "color": "0xF2A22C"
       },
       {
-        "name": "Rotten Vale",
+        "name": "Rotted Region",
         "color": "0xBF5726"
       },
       {
-        "name": "Coral Highlands",
+        "name": "Coral Region",
         "color": "0x86E0D4"
       },
       {
-        "name": "Elder's Recess",
-        "color": "0xED512F"
-      },
-      {
-        "name": "Hoarfrost Reach",
+        "name": "Tundra Region",
         "color": "0x8ABEEB"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
+
     ]
   },
 
@@ -1674,13 +1513,11 @@
     "resistances": ["Water"],
     "threat-level": "🔥🔥",
     "locations": [{
-        "name": "Hoarfrost Reach",
-        "color": "0x8ABEEB"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
+        "name": "Tundra Region",
+        "color": "0x8ABEEB",
+        "tempered": true
       }
+
     ]
   },
 
@@ -1715,13 +1552,10 @@
     "threat-level": "none",
     "weakness": ["Water (⭐⭐⭐)", "Dragon (⭐⭐)", "Ice (⭐)", "Blast (⭐⭐⭐)", "Paralysis (⭐⭐)", "Stun (⭐⭐)", "Poison (⭐)", "Sleep (⭐)"],
     "locations": [{
-        "name": "Ancient Forest",
+        "name": "Forest Region",
         "color": "0x1E9E47"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
+
     ]
   },
 
@@ -1738,17 +1572,14 @@
     "threat-level": "🔥🔥",
     "weakness": ["Ice (⭐⭐⭐)", "Water (⭐⭐)", "Fire (⭐)", "Dragon (⭐)", "Poison (⭐⭐)", "Sleep (⭐⭐)", "Blast (⭐⭐)", "Stun (⭐⭐)", "Paralysis (⭐)"],
     "locations": [{
-        "name": "Ancient Forest",
+        "name": "Forest Region",
         "color": "0x1E9E47"
       },
       {
-        "name": "Coral Highlands",
+        "name": "Coral Region",
         "color": "0x86E0D4"
-      },
-      {
-        "name": "The Guiding Lands",
-        "color": "0xFFFFFF"
       }
+
     ]
   },
 
