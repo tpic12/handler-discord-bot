@@ -1431,7 +1431,7 @@
     "icon": "color/icon/uragaan_icon.png",
     "species": "Brute Wyvern",
     "description": "Large brute wyverns that feed on ore, using their mighty jaw to crush solid rock to powder. They've been known to confront Lavasioths over territory disputes.",
-    "useful_info": "A crushing slam from Uragaan's jaw can send shockwaves across the ground, detonating any explosive rocks in the area. In additionm when an Uragaan is toppled, its body can be mined for ore.",
+    "useful_info": "A crushing slam from Uragaan's jaw can send shockwaves across the ground, detonating any explosive rocks in the area. In addition when an Uragaan is toppled, its body can be mined for ore.",
     "elements": ["Fire"],
     "ailments": ["Sleep", "Fireblight"],
     "resistances": ["Fire"],

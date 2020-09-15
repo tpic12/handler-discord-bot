@@ -2,6 +2,7 @@ const { Hunts } = require("../variable");
 const HuntService = require("../helpers/hunt-service");
 const countdown = require("countdown");
 const moment = require("moment");
+const Discord = require("discord.js");
 const fullDateRegExp = /^([0-1]?[0-9]|[2][0-3]):[0-5][0-9]\s*(a|p|A|P)(m|M)*\s(\w{3})\s([0]\d|[1][0-2])\/([0-2]\d|[3][0-1])\/([2][01]|[1][6-9])\d{2}$/g;
 const timeRegExp = /^([0-1]?[0-9]|[2][0-3]):[0-5][0-9]\s*(a|p|A|P)(m|M)*\s(\w{3})$/g;
 module.exports = {
@@ -93,6 +94,11 @@ module.exports = {
           message.author.username +
           ` [ ${roles.join(" | ")} ] `
         : "Created by: " + message.author.username;
+      let attachment = new Discord.MessageAttachment(
+        `./src/assets/localeIcons/huntLogo.png`,
+        "huntLogo.png"
+      );
+      let thumbnail = `attachment://huntLogo.png`;
 
       embed
         .setTitle("Hunt")
@@ -100,6 +106,8 @@ module.exports = {
         //edit times to just be argument that user gave, edit example to include tz's like charlamagne
         .addField("Time:", `${hunt.time}`)
         .addField(`Hunters: 1/4`, hunters)
+        .attachFiles(attachment)
+        .setThumbnail(thumbnail)
         .setColor(0xa555bd)
         .setTimestamp(formattedDate)
         .setFooter(footer);
@@ -115,15 +123,17 @@ module.exports = {
             message.author.id + " G " + message.guild.name + " M " + sent.id,
             hunt
           );
+          // console.log("hunt: ", hunt);
           //sends warning to team about hunt 10 minutes prior to hunt
           setTimeout(() => {
-            let h = Hunts.get(
-              message.author.id + " G " + message.guild.name + " M " + sent.id
-            );
-            if (h) {
-              message.author.send(`${hunt.desc} in 10 minutes`);
-            } else {
-            }
+            // let h = Hunts.get(
+            //   message.author.id + " G " + message.guild.name + " M " + sent.id
+            // );
+            // if (h) {
+            //   message.author.send(`${hunt.desc} in 10 minutes`);
+            // } else {
+            // }
+            HuntService.messageHunters(message, sent);
           }, hunt.timeMS - 600000);
           //deletes hunt message in channel when hunt starts
           setTimeout(() => {
@@ -135,7 +145,7 @@ module.exports = {
           return sent;
         })
         .then(async (msg) => {
-          for (emoji of ["➕", "➖", "❔", "💀"]) await msg.react(emoji);
+          for (emoji of ["✅", "❌", "❔", "💀"]) await msg.react(emoji);
           return msg;
         })
         .then(async (sent) => {
@@ -151,25 +161,46 @@ module.exports = {
             });
 
             if (
-              reaction.emoji.name === "➕" &&
+              reaction.emoji.name === "✅" &&
               hunter.username !== "Handler" &&
               hunter.username !== "Handler-dev"
             ) {
-              HuntService.addHunter(hunter, message, sent, formattedDate);
+              HuntService.addHunter(
+                hunter,
+                message,
+                sent,
+                formattedDate,
+                attachment,
+                thumbnail
+              );
             }
             if (
-              reaction.emoji.name === "➖" &&
+              reaction.emoji.name === "❌" &&
               hunter.username !== "Handler" &&
               hunter.username !== "Handler-dev"
             ) {
-              HuntService.removeHunter(hunter, message, sent, formattedDate);
+              HuntService.removeHunter(
+                hunter,
+                message,
+                sent,
+                formattedDate,
+                attachment,
+                thumbnail
+              );
             }
             if (
               reaction.emoji.name === "❔" &&
               hunter.username !== "Handler" &&
               hunter.username !== "Handler-dev"
             ) {
-              HuntService.addAltHunter(hunter, message, sent, formattedDate);
+              HuntService.addAltHunter(
+                hunter,
+                message,
+                sent,
+                formattedDate,
+                attachment,
+                thumbnail
+              );
             }
             if (
               reaction.emoji.name === "💀" &&

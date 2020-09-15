@@ -10,10 +10,11 @@ module.exports = async (bot) => {
       Obj[hunt.id] = {
         server_id: hunt.server_id,
         author_id: hunt.author_id,
-        desc: hunt.content,
+        desc: hunt.desc,
         hunters: hunt.huntersId,
         altHunters: hunt.altHuntersId,
         time: hunt.time,
+        timeMS: hunt.timeMS,
       };
     });
     res.send(Obj);

@@ -3,7 +3,7 @@ const { MessageEmbed } = require("discord.js");
 const moment = require("moment");
 
 const HuntService = {
-  removeHunter(hunter, message, sent, formattedDate) {
+  removeHunter(hunter, message, sent, formattedDate, attachment, thumbnail) {
     const removeHunterEmbed = new MessageEmbed();
     let hunt = Hunts.get(
       message.author.id + " G " + message.guild.name + " M " + sent.id
@@ -43,6 +43,8 @@ const HuntService = {
         // .addField("Time:", hunt.time.slice(0, hunt.time.length - 5), true)
         .addField("Time:", hunt.time)
         .addField(`Hunters: ${size}/4`, hunt.hunters)
+        .attachFiles(attachment)
+        .setThumbnail(thumbnail)
         .setColor(0xa555bd)
         .setFooter(footer)
         .setTimestamp(formattedDate);
@@ -54,6 +56,8 @@ const HuntService = {
         .addField("Time:", hunt.time)
         .addField(`Hunters: ${size}/4`, hunt.hunters, true)
         .addField("Alternates:", hunt.altHunters, true)
+        .attachFiles(attachment)
+        .setThumbnail(thumbnail)
         .setColor(0xa555bd)
         .setFooter(footer)
         .setTimestamp(formattedDate);
@@ -61,7 +65,7 @@ const HuntService = {
 
     sent.edit(removeHunterEmbed);
   },
-  addHunter(hunter, message, sent, formattedDate) {
+  addHunter(hunter, message, sent, formattedDate, attachment, thumbnail) {
     const addHunterEmbed = new MessageEmbed();
     let hunt = Hunts.get(
       message.author.id + " G " + message.guild.name + " M " + sent.id
@@ -100,6 +104,8 @@ const HuntService = {
           // .addField("Time:", hunt.time.slice(0, hunt.time.length - 5), true)
           .addField("Time:", hunt.time)
           .addField(`Hunters: ${size}/4`, hunt.hunters)
+          .attachFiles(attachment)
+          .setThumbnail(thumbnail)
           .setColor(0xa555bd)
           .setFooter(footer)
           .setTimestamp(formattedDate);
@@ -111,6 +117,8 @@ const HuntService = {
           .addField("Time:", hunt.time)
           .addField(`Hunters: ${size}/4`, hunt.hunters, true)
           .addField("Alternates:", hunt.altHunters, true)
+          .attachFiles(attachment)
+          .setThumbnail(thumbnail)
           .setColor(0xa555bd)
           .setFooter(footer)
           .setTimestamp(formattedDate);
@@ -118,7 +126,7 @@ const HuntService = {
       sent.edit(addHunterEmbed);
     }
   },
-  addAltHunter(hunter, message, sent, formattedDate) {
+  addAltHunter(hunter, message, sent, formattedDate, attachment, thumbnail) {
     const addAltHunterEmbed = new MessageEmbed();
     let hunt = Hunts.get(
       message.author.id + " G " + message.guild.name + " M " + sent.id
@@ -153,6 +161,8 @@ const HuntService = {
         .addField("Time:", hunt.time)
         .addField(`Hunters: ${size}/4`, hunt.hunters, true)
         .addField("Alternates:", hunt.altHunters, true)
+        .attachFiles(attachment)
+        .setThumbnail(thumbnail)
         .setColor(0xa555bd)
         .setFooter(footer)
         .setTimestamp(formattedDate);
@@ -169,6 +179,24 @@ const HuntService = {
     let deleteMessage = `**${hunt.desc}** hunt deleted...`;
     message.channel.messages.delete(sent);
     message.channel.send(deleteMessage);
+  },
+  messageHunters(message, sent) {
+    let h = Hunts.get(
+      message.author.id + " G " + message.guild.name + " M " + sent.id
+    );
+
+    if (h) {
+      //an array of the users ID's
+      let hunters = h.huntersId;
+      // console.log("hunters: ", hunters);
+      message.client.users.cache.forEach((user) => {
+        if (hunters.includes(user.id) && !user.bot) {
+          // console.log("user: ", user);
+          user.send(`**${h.desc} hunt** in 10 minutes, get ready partner!`);
+        }
+      });
+    } else {
+    }
   },
 };
 
