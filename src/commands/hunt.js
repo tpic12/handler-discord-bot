@@ -21,13 +21,8 @@ module.exports = {
       timeMS: "",
     };
 
-    // message.channel.send("What do you want to hunt?");
     let filter = (m) => m.author.id === message.author.id;
-    // let titleMsg = await message.channel.awaitMessages(filter, {
-    //   max: 1,
-    //   dispose: true,
-    // });
-    // hunt.desc = titleMsg.first().content;
+
     hunt.desc = args.slice(1).join(" ");
 
     message.channel.send(
@@ -40,11 +35,8 @@ module.exports = {
     let tz = proposedTime.split(" ")[2];
     let fullDate = fullDateRegExp.exec(proposedTime);
     let partialDate = timeRegExp.exec(proposedTime);
-    // console.log("precheck: ", proposedTime);
-    // console.log("full date: ", !!fullDate);
-    // console.log("partial date: ", !!partialDate);
+
     if (!fullDate && !partialDate) {
-      // console.log("WRONG DATE: ", proposedTime);
       message.reply(
         "Incorrect time format, `example: 7:35 pm est 07/23/2020 or 7:35 pm est if today`"
       );
@@ -70,10 +62,7 @@ module.exports = {
         );
         displayDate = `${d} ${proposedTime}`;
       }
-      // console.log("formattedDate: ", formattedDate);
-      // console.log("toISO: ", proposedTime.toISOString());
       hunt.time = displayDate;
-      // console.log("display time: ", hunt.time);
 
       hunt.timeMS = countdown(new Date(), formattedDate, countdown.MILLISECONDS)
         .toString()
@@ -87,8 +76,6 @@ module.exports = {
         .filter((r) => roleIds.includes(r.id))
         .map((i) => i.name);
 
-      // console.log("role: ", roleIds);
-      // console.log(roles.join(" | "));
       let footer = roles.length
         ? "Created by: " +
           message.author.username +
@@ -123,16 +110,8 @@ module.exports = {
             message.author.id + " G " + message.guild.name + " M " + sent.id,
             hunt
           );
-          // console.log("hunt: ", hunt);
           //sends warning to team about hunt 10 minutes prior to hunt
           setTimeout(() => {
-            // let h = Hunts.get(
-            //   message.author.id + " G " + message.guild.name + " M " + sent.id
-            // );
-            // if (h) {
-            //   message.author.send(`${hunt.desc} in 10 minutes`);
-            // } else {
-            // }
             HuntService.messageHunters(message, sent);
           }, hunt.timeMS - 600000);
           //deletes hunt message in channel when hunt starts
@@ -150,7 +129,7 @@ module.exports = {
         })
         .then(async (sent) => {
           const reactions = await sent.awaitReactions((reaction) => {
-            //Get hunter info from reaction.blahblahblah
+            //Get hunter info from reaction
             let hunter = {
               username: "",
               hunterId: "",
@@ -216,26 +195,3 @@ module.exports = {
     }
   },
 };
-/**
- * Object.size = function(obj) {
-    var size = 0, key;
-    for (key in obj) {
-        if (obj.hasOwnProperty(key)) size++;
-    }
-    return size;
-};
-let obj = {}
-function addObj(value) {
-let id = Math.floor(1000 + Math.random() * 9000);
-while(obj[id]){
-  console.log('new id for: ', id);
-  id = Math.floor(1000 + Math.random() * 9000);
-}
-console.log(id);
-obj[id] = value;
-obj.total += 1
-}
-for(let i=0; i<testStr.length; i++){
-  addObj(testStr[i])
-}
- */

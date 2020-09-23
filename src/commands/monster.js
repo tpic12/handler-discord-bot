@@ -5,14 +5,10 @@ module.exports = {
   name: "monster",
   description: "search for info on specific monster",
   async execute(message, name, embed, args) {
-    // console.log("name: ", name);
-    // console.log("has ' : ", name.split("").includes("'"));
     if (name.split("").includes("'") || name.split("").includes("‘")) {
       name = name.replace("‘", " ");
       name = name.replace("'", " ");
     }
-    // console.log("new name: ", name);
-    // console.log("args: ", args);
     let monsterValue = [];
     if (args[1] == "all") {
       MonsterList.forEach((monster) => {
@@ -28,8 +24,6 @@ module.exports = {
       });
     }
 
-    // console.log("monsters: ", monsterValue);
-
     if (!monsterValue.length) {
       return message.reply(
         `Sorry, I can't find that monster in my research notes!`
@@ -38,18 +32,14 @@ module.exports = {
 
     let weakness3 = [];
     let weakness2 = [];
-    let replaceStr = /&#9733;/;
-    // monsterValue.weakness.replace(replaceStr, "⭐");⭐⭐⭐
     monsterValue[0].weakness.forEach((wk) => {
       let item = wk.split(" ");
-      // console.log(item);
       if (item[1].substring(1, item[1].length - 1) === "⭐⭐⭐") {
         weakness3.push(item[0]);
       } else if (item[1].substring(1, item[1].length - 1) === "⭐⭐") {
         weakness2.push(item[0]);
       }
     });
-    // console.log("monster value: ", monsterValue);
     let title;
     if (monsterValue[0]["threat-level"] !== "none") {
       title =
@@ -71,7 +61,6 @@ module.exports = {
     let locales = monsterValue[0].locations
       .map((locale) => locale.name)
       .join(", ");
-    // console.log(locales);
     monsterValue.map((monster) => {
       let searchName = monster.name.toLowerCase().split(" ").join("-");
       let iconURL = MonsterIcon[searchName].icon;
@@ -91,25 +80,3 @@ module.exports = {
     });
   },
 };
-
-//AXIOS API CALL
-
-// try {
-//   let getMonster = async () => {
-//     // let response = await axios.get(`${api}/monsters?q={"name":"${name}"}`);
-
-//     let response = await axios
-//       .get("../assets/monsters.json")
-//       .then((res) => res.json())
-//       .catch((error) => console.log(error));
-//     // .then((res) => res.json())
-//     // .then((data) => console.log(data));
-
-//     let monster = response.data;
-//     return monster;
-//   };
-//   let monsterValue = await getMonster();
-//   console.log(monsterValue);
-// } catch (err) {
-//   console.error;
-// }

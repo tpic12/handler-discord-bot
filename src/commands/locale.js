@@ -14,7 +14,6 @@ module.exports = {
     let isInArea = (locale) => {
       if (locale.name.toLowerCase().includes(`${area.toLowerCase()} region`)) {
         areaTitle = locale.name;
-        // console.log(areaTitle);
         color = locale.color;
         if (locale.icon) {
           iconSrc = locale.icon;
@@ -24,12 +23,10 @@ module.exports = {
       }
     };
     let isTempered = (locale) => {
-      // console.log(locale);
       if (
         locale.tempered &&
         locale.name.toLowerCase().includes(`${area.toLowerCase()} region`)
       ) {
-        // console.log("YAY!");
         return true;
       }
       return false;
@@ -39,9 +36,7 @@ module.exports = {
         monster.locations.some(isInArea) &&
         monster["threat-level"] !== "none"
       ) {
-        // let species = monster.species;
         let threat = monster["threat-level"];
-        // console.log("tempered check: ", monster.locations.some(isTempered));
         if (monster.locations.some(isTempered)) {
           if (!monsters[threat]) {
             monsters[threat] = [`**${monster.name}**`];
@@ -97,11 +92,13 @@ module.exports = {
     }
   },
 };
-//ADD FIELDS .addFields(siege)
+//ADD FIELDS EXAMPLE
 // let siege = [
 //   { name: "Objective", value: siegeValue[0].successConditions },
 //   { name: "Time Left", value: timeLeft },
 // ];
+// .addFields(siege)
+
 /**
  * species:
  * -Fanged Beast
