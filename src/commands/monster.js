@@ -5,8 +5,8 @@ module.exports = {
   name: "monster",
   description: "search for info on specific monster",
   async execute(message, name, embed, args) {
-    if (name.split("").includes("'") || name.split("").includes("‘")) {
-      name = name.replace("‘", " ");
+    if (name.split("").includes("'") || name.split("").includes("’")) {
+      name = name.replace("’", " ");
       name = name.replace("'", " ");
     }
     let monsterValue = [];
@@ -23,7 +23,6 @@ module.exports = {
         }
       });
     }
-
     if (!monsterValue.length) {
       return message.reply(
         `Sorry, I can't find that monster in my research notes!`

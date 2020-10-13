@@ -171,7 +171,7 @@ module.exports = {
     icon:
       "https://gamepedia.cursecdn.com/monsterhunterworld_gamepedia_en/thumb/8/85/MHWI_Ebony_Odogaron_Icon.png/120px-MHWI_Ebony_Odogaron_Icon.png?version=49d5dc10a7f0f73b44c6fe571bdff498",
   },
-  "fulgar-anjanath": {
+  "fulgur-anjanath": {
     icon:
       "https://gamepedia.cursecdn.com/monsterhunterworld_gamepedia_en/thumb/f/fc/MHWI_Fulgur_Anjanath_Icon.png/120px-MHWI_Fulgur_Anjanath_Icon.png?version=0ae7b865458c498159d743f9678c00d8",
   },
@@ -278,5 +278,9 @@ module.exports = {
   alatreon: {
     icon:
       "https://vignette.wikia.nocookie.net/monsterhunter/images/6/6d/MHWI-Alatreon_Icon.png/revision/latest/scale-to-width-down/62?cb=20200321131243",
+  },
+  fatalis: {
+    icon:
+      "https://vignette.wikia.nocookie.net/monsterhunter/images/0/09/MHWI-Fatalis_Icon.png/revision/latest?cb=20200828124104",
   },
 };
