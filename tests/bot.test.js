@@ -119,7 +119,7 @@ describe("monster", () => {
     expect(channel.lastMessage.content).toHaveProperty("title");
     expect(channel.lastMessage.content).toHaveProperty("thumbnail");
     expect(channel.lastMessage.content).toHaveProperty("fields");
-    expect(channel.lastMessage.content.fields).toHaveLength(4);
+    expect(channel.lastMessage.content.fields).toHaveLength(5);
     expect(channel.lastMessage.content).toHaveProperty("description");
   });
   it("sends error message when typo of monsters name", async () => {
@@ -143,8 +143,8 @@ describe("locale", () => {
       ["locale", "forest"]
     );
     expect(channel.lastMessage.content).toHaveProperty("title");
-    expect(channel.lastMessage.content.title).toContain("**Ancient Forest**");
-    expect(channel.lastMessage.content.fields).toHaveLength(8);
+    expect(channel.lastMessage.content.title).toContain("**Forest Region**");
+    expect(channel.lastMessage.content.fields).toHaveLength(3);
   });
   it("responds with error message when locale typo exists", async () => {
     await localeCommand(
