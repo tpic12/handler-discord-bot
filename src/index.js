@@ -17,8 +17,8 @@ for (const file of commandFiles) {
 ["server"].forEach((handler) => {
   require(`./${handler}`)(bot);
 });
-
-bot.login(process.env.BOT_TOKEN);
+const devBotToken = process.env.DEV_BOT_TOKEN ||  process.env.BOT_TOKEN
+bot.login(devBotToken);
 
 bot.on("ready", () => {
   console.log("Handler is Online!");
