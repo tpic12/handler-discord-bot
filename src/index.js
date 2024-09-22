@@ -1,8 +1,10 @@
 require("dotenv").config();
 const Discord = require("discord.js");
 const bot = new Discord.Client();
-// const { API_ENDPOINT } = require("../config");
+
+const axios = require("axios");
 const fs = require("fs");
+const { getApiEndpoint } = require("./helpers/utilities");
 const PREFIX = "*";
 
 bot.commands = new Discord.Collection();
@@ -17,7 +19,7 @@ for (const file of commandFiles) {
 ["server"].forEach((handler) => {
   require(`./${handler}`)(bot);
 });
-const devBotToken = process.env.DEV_BOT_TOKEN ||  process.env.BOT_TOKEN
+const devBotToken = process.env.DEV_BOT_TOKEN || process.env.BOT_TOKEN;
 bot.login(devBotToken);
 
 bot.on("ready", () => {
@@ -45,6 +47,11 @@ bot.on("message", async (message) => {
       break;
     case `*help`:
       bot.commands.get("help").execute(message, embed, args);
+      break;
+    case `*siege`:
+      bot.commands
+        .get("siege")
+        .execute(message, axios, API_ENDPOINT, embed, args);
       break;
     case `*locale`:
       if (!args[1] || args[1].toLowerCase() == "the" || args[1].length < 4)
