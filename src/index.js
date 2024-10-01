@@ -1,33 +1,53 @@
 require("dotenv").config();
 const Discord = require("discord.js");
 const bot = new Discord.Client();
-
-const axios = require("axios");
 const fs = require("fs");
-const { getApiEndpoint } = require("./helpers/utilities");
-const PREFIX = "*";
+
+const APPLICABLE_GAMES = ["wilds", "world", "rise"];
 
 bot.commands = new Discord.Collection();
+
+// const commandFiles = fs
+//   .readdirSync("./src/commands/")
+//   .filter((file) => file.endsWith(".js"));
+// for (const file of commandFiles) {
+//   const command = require(`./commands/${file}`);
+
+//   bot.commands.set(command.name, command);
+// }
 const commandFiles = fs
   .readdirSync("./src/commands/")
   .filter((file) => file.endsWith(".js"));
-for (const file of commandFiles) {
-  const command = require(`./commands/${file}`);
 
-  bot.commands.set(command.name, command);
-}
+commandFiles.forEach((file) => {
+  try {
+    const command = require(`./commands/${file}`);
+    if (command.name) {
+      bot.commands.set(command.name, command);
+    } else {
+      console.warn(`Command ${file} is missing a name.`);
+    }
+  } catch (error) {
+    console.error(`Error loading command ${file}:`, error);
+  }
+});
+
 ["server"].forEach((handler) => {
   require(`./${handler}`)(bot);
 });
 const devBotToken = process.env.DEV_BOT_TOKEN || process.env.BOT_TOKEN;
-bot.login(devBotToken);
+bot.login(devBotToken).catch((error) => {
+  console.error("Failed to log in:", error);
+});
 
 bot.on("ready", () => {
   console.log("Handler is Online!");
 });
 
 bot.on("message", async (message) => {
-  // let args = message.content.substring(PREFIX.length).split(" ");
+  const PREFIX = "*"; // Define a constant for the command prefix
+  if (!message.content.startsWith(PREFIX) || message.author.bot) return;
+
   let args = message.content.split(" ");
   let embed = new Discord.MessageEmbed();
 
@@ -40,19 +60,22 @@ bot.on("message", async (message) => {
       bot.commands.get("hunt").execute(message, embed, args);
       break;
     case `*monster`:
-      let name = args.slice(1).join(" ");
-      if (!args[1]) return message.reply("Please specify monster to search");
+      let game = args[1];
+      if (!APPLICABLE_GAMES.includes(args[1]))
+        return message.reply("Please specify game to monsters");
+      let name = args.slice(2).join(" ");
+      if (!args[2]) return message.reply("Please specify monster to search");
 
-      bot.commands.get("monster").execute(message, name, embed, args);
+      bot.commands.get("monsterV2").execute(message, name, game, embed, args);
       break;
     case `*help`:
       bot.commands.get("help").execute(message, embed, args);
       break;
-    case `*siege`:
-      bot.commands
-        .get("siege")
-        .execute(message, axios, API_ENDPOINT, embed, args);
-      break;
+    // case `*siege`:
+    //   bot.commands
+    //     .get("siege")
+    //     .execute(message, axios, API_ENDPOINT, embed, args);
+    //   break;
     case `*locale`:
       if (!args[1] || args[1].toLowerCase() == "the" || args[1].length < 4)
         return message.reply("Please specify a locale to search!");
