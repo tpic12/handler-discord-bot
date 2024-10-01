@@ -7,14 +7,6 @@ const APPLICABLE_GAMES = ["wilds", "world", "rise"];
 
 bot.commands = new Discord.Collection();
 
-// const commandFiles = fs
-//   .readdirSync("./src/commands/")
-//   .filter((file) => file.endsWith(".js"));
-// for (const file of commandFiles) {
-//   const command = require(`./commands/${file}`);
-
-//   bot.commands.set(command.name, command);
-// }
 const commandFiles = fs
   .readdirSync("./src/commands/")
   .filter((file) => file.endsWith(".js"));
