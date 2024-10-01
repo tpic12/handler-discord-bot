@@ -62,7 +62,6 @@ module.exports = {
       );
       let defaultThumbnail = `attachment://huntLogo.png`;
 
-      // const title = `**${monster.name}**`;
       let title;
       if (monster.threatLevel !== "none") {
         title = `**${monster.name}**  [${monster.threatLevel}🔥]`;
