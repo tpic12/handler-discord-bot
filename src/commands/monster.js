@@ -60,6 +60,7 @@ module.exports = {
     let locales = monsterValue[0].locations
       .map((locale) => locale.name)
       .join(", ");
+    let embedColor = monsterValue[0].locations[0].color;
     monsterValue.map((monster) => {
       let searchName = monster.name.toLowerCase().split(" ").join("-");
       let iconURL = MonsterIcon[searchName].icon;
@@ -74,7 +75,7 @@ module.exports = {
         .addField("**Resistances**", monster.resistances.join(", "))
         .setDescription(monster.useful_info)
         .setThumbnail(iconURL)
-        .setColor(0x48c9b0);
+        .setColor(embedColor);
       message.channel.send(embed);
     });
   },

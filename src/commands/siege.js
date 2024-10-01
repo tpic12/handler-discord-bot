@@ -13,27 +13,47 @@ module.exports = {
     let getMonster = async () => {
       let siege;
       try {
-        let responseSafi = await axios.get(
+        const responseSafi = axios.get(
           `${api}/event?q={"type":"safi'jiiva siege","platform":"console"}`
         );
-        console.log("safi: ", responseSafi.data);
-        siege = responseSafi.data;
-      } catch (e) {
-        console.error(e.message);
-      }
-      try {
-        let responseKulve = await axios.get(
+        const responseKulve = axios.get(
           `${api}/events?q={"type":"kulve taroth siege","platform":"console"}`
         );
-        siege = responseKulve.data;
-        return siege;
+
+        // axios.all([responseSafi, responseKulve]).then(axios.spread((...responses) => {
+        //   const responseOne = responses[0]
+        //   const responseTwo = responses[1]
+        //   console.log(responseOne)
+        //   console.lof(responseTwo)
+        // })).catch(errors => {
+        //   // react on errors.
+        // })
+        Promise.all([responseSafi, responseKulve]).then(function(values) {
+          console.log(values);
+        });
+        
+
+        const response = responseSafi || responseKulve
+        console.log("response: ", response);
+        siege = response.data;
       } catch (e) {
         console.error(e.message);
       }
+      // try {
+      //   const responseKulve = await axios.get(
+      //     `${api}/events?q={"type":"kulve taroth siege","platform":"console"}`
+      //   );
+
+      //   siege = responseKulve.data;
+      //   return siege;
+      // } catch (e) {
+      //   console.error(e.message);
+      // }
 
       return siege;
     };
     let siegeValue = await getMonster();
+    console.log({siegeValue})
     if (!siegeValue.length) {
       return message.reply(`Sorry, I can't find a siege going on right now!`);
     }
