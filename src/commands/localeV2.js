@@ -67,8 +67,7 @@ module.exports = {
       embed
         .setTitle(`**${areaTitle}**`)
         .addFields(monsterFields)
-        .setColor(color)
-        .setFooter("*Bold names are tempered only in that area");
+        .setColor(color);
 
       if (iconSrc) {
         embed
@@ -76,6 +75,10 @@ module.exports = {
           .setThumbnail(`attachment://${iconSrc}`);
       } else {
         embed.attachFiles(defaultAttachment).setThumbnail(defaultThumbnail);
+      }
+
+      if (game.toLowerCase() === "world") {
+        embed.setFooter("*Bold names are tempered only in that area");
       }
 
       message.channel.send(embed);
