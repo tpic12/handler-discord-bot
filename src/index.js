@@ -42,7 +42,7 @@ bot.on("message", async (message) => {
 
   let args = message.content.split(" ");
   let embed = new Discord.MessageEmbed();
-
+  let game = args[1];
   switch (args[0]) {
     case `*time`:
       bot.commands.get("time").execute(message, args);
@@ -52,7 +52,6 @@ bot.on("message", async (message) => {
       bot.commands.get("hunt").execute(message, embed, args);
       break;
     case `*monster`:
-      let game = args[1];
       if (!APPLICABLE_GAMES.includes(args[1]))
         return message.reply("Please specify game to monsters");
       let name = args.slice(2).join(" ");
@@ -69,10 +68,12 @@ bot.on("message", async (message) => {
     //     .execute(message, axios, API_ENDPOINT, embed, args);
     //   break;
     case `*locale`:
-      if (!args[1] || args[1].toLowerCase() == "the" || args[1].length < 4)
+      if (!APPLICABLE_GAMES.includes(args[1]))
+        return message.reply("Please specify game to monsters");
+      if (!args[2] || args[2].toLowerCase() == "the" || args[2].length < 4)
         return message.reply("Please specify a locale to search!");
-      let area = args.slice(1).join(" ");
-      bot.commands.get("locale").execute(message, area, embed, args);
+      let area = args.slice(2).join(" ");
+      bot.commands.get("localeV2").execute(message, area, game, embed, args);
       break;
   }
 });
