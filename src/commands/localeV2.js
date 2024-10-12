@@ -59,10 +59,10 @@ module.exports = {
       );
 
       let defaultAttachment = new Discord.MessageAttachment(
-        `./src/assets/localeIcons/huntLogo.png`,
-        "huntLogo.png"
+        `./src/assets/localeIcons/mapIcon.png`,
+        "mapIcon.png"
       );
-      let defaultThumbnail = `attachment://huntLogo.png`;
+      let defaultThumbnail = `attachment://mapIcon.png`;
 
       embed
         .setTitle(`**${areaTitle}**`)
