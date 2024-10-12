@@ -72,7 +72,7 @@ module.exports = {
       const embedIndex = Math.floor(Math.random() * monster.locations.length);
       const embedColor = monster.locations[embedIndex]?.color || "#FFFFFF"; // Default color in case not found
       const searchName = monster.name.toLowerCase().split(" ").join("-");
-      const iconURL = MonsterIcon[searchName]?.icon; // Default icon if not found
+      const iconURL = MonsterIcon[game.toLowerCase()][searchName]?.icon; // Default icon if not found
 
       // Construct the embed message
       embed
